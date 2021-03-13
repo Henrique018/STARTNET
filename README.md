@@ -18,5 +18,7 @@ O objetivo do projeto será a criação de um catálogo de lanches básico, ofer
 
 ## Endereço da Aplicação
 
-[ ] hospedar o projeto na aws.
-[ ] Definir instruções de instalação e acesso.
+- [ ] Definir requisitos da aplicação.
+- [ ] instalar as ferramentas necessárias para o desenvolvimento do projeto.
+- [ ] hospedar o projeto na aws.
+- [ ] Definir instruções de instalação e acesso.
