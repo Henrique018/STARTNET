@@ -9,8 +9,8 @@
 |------|---------------|-------|-------|
 | 419103544 | Ellen Assis | TADS  | 5A    |
 | 419118533 | Henrique Oliveira   | TADS  | 5A    |
-| 159  | João Vitor Silva Mathias | TADS  | 3A    |
-| 785  |Julia Kathleen Oliveira dos Santos| TADS  | 3A |
+| 920100250 | João Vitor Silva Mathias | TADS  | 3A    |
+| 2220110327 | Julia Kathleen Oliveira dos Santos| TADS  | 3A |
 
 ## Descrição do Projeto
 
@@ -18,5 +18,5 @@ O objetivo do projeto será a criação de um catálogo de lanches básico, ofer
 
 ## Endereço da Aplicação
 
-[] hospedar o projeto na aws.
-[] Definir instruções de instalação e acesso.
+[ ] hospedar o projeto na aws.
+[ ] Definir instruções de instalação e acesso.
