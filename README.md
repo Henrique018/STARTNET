@@ -12,6 +12,7 @@
 | 420112571 | Juan Cunha dos Santos | TADS  | 3A    |
 | 920100250 | João Vitor Silva Mathias | TADS  | 3A    |
 | 2220110327 | Julia Kathleen Oliveira dos Santos| TADS  | 3A |
+| 920116114 | Victor Ryuichi Nemoto| TADS  | 3A |
 
 ## Descrição do Projeto
 
