@@ -16,7 +16,10 @@
 
 ## Descrição do Projeto
 
-O objetivo do projeto será a criação de um sistema para uma empresa provedora de internet, oferecendo opções de planos para cada objetividade dos usuários. O sistema terá cadastramento de clientes, tendo um login e senha para a segurança do cliente e uma pagina de agendamento. O projeto será gerenciado com o framework Scrum e desenvolvido com as técnologias web HTML, CSS e JavaScript além do MySql como banco de dados. O projeto ainda será hospedado em nuvem na Amazon AWS.
+O objetivo do projeto será a criação de um sistema para uma empresa provedora de internet, oferecendo opções de planos para cada objetividade dos usuários.
+O sistema incluirá todos os planos disponíveis, com seus respectivos valores e adesão das oportunidades que eles oferecem, também tendo uma página de login e senha para a segurança do cliente e uma pagina de agendamento. Além disso nossos clientes terão suporte para a instalação e possíveis ocorrências futuras.
+
+O projeto será gerenciado com o framework Scrum e desenvolvido com as técnologias web HTML, CSS e JavaScript além do MySql como banco de dados. O projeto ainda será hospedado em nuvem na Amazon AWS.
 
 ## Endereço da Aplicação
 a definir
