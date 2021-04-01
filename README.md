@@ -16,7 +16,7 @@
 
 ## Descrição do Projeto
 
-O objetivo do projeto será a criação de um catálogo de lanches básico, oferecendo opções variáveis de comidas e acompanhamentos, também tendo um cadastramento de clientes deixando as informações dele salva no sistema, tendo um login e senha para a segurança do cliente. O projeto será desenvolvido com o framework ágil Scrum, as técnologias de desenvolvimento web HTML, CSS e JavaScript além do MySql como banco de dados. O projeto ainda será hospedado em nuvem na Amazon AWS.
+O objetivo do projeto será a criação de um sistema para uma empresa provedora de internet, oferecendo opções de planos para cada objetividade dos usuários. O sistema terá cadastramento de clientes, tendo um login e senha para a segurança do cliente e uma pagina de agendamento. O projeto será gerenciado com o framework Scrum e desenvolvido com as técnologias web HTML, CSS e JavaScript além do MySql como banco de dados. O projeto ainda será hospedado em nuvem na Amazon AWS.
 
 ## Endereço da Aplicação
 a definir
