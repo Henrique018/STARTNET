@@ -19,7 +19,7 @@
 O objetivo do projeto é a criação de um sistema para uma empresa provedora de internet, oferecendo opções de planos para cada objetividade dos usuários.
 O sistema incluirá todos os planos disponíveis, com seus respectivos valores e adesão das oportunidades que eles oferecem, também tendo uma página de login para a segurança do cliente e uma página de agendamento. Além disso, nossos clientes terão suporte para a instalação e possíveis ocorrências futuras.
 
-O projeto será gerenciado com a metodologia Scrum e desenvolvido com as tecnologias web HTML, CSS e JavaScript além do MySQL como banco de dados. O projeto será hospedado em nuvem na Amazon AWS.
+O projeto será gerenciado com a metodologia Scrum e desenvolvido com as tecnologias web HTML, CSS e JavaScript, além do MySQL como banco de dados. O projeto será hospedado em nuvem na Amazon AWS.
 
 ## Endereço da Aplicação
 a definir
