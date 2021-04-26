@@ -1,0 +1,36 @@
+body{
+    font-family: sans-serif;
+}
+#top-header{
+    height: 150px;
+    width: 1663px;
+    background: #080E45;
+    position: relative;
+}
+.logo{
+    margin: 15px 0 0 135px;
+}
+.top-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.top-nav ul {
+    margin: 0;
+    padding: 0;
+}
+.top-nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 75px 15px 0 0;
+    padding: 15px;
+}
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.top-nav a:hover{
+    color: #FF8314;
+    transition: #FF8314 .3s linear;
+}
