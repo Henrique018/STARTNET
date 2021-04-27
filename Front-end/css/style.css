@@ -1,14 +1,15 @@
-body{
-    font-family: sans-serif;
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
 }
-#top-header{
-    height: 150px;
+#top-header {
+    height: 120px;
     width: 1663px;
     background: #080E45;
     position: relative;
 }
-.logo{
-    margin: 15px 0 0 135px;
+.logo {
+    margin: 13px 0 0 180px;
 }
 .top-nav {
     position: absolute;
@@ -22,15 +23,33 @@ body{
 .top-nav li {
     list-style: none;
     display: inline-block;
-    margin: 75px 15px 0 0;
+    margin: 50px 15px 0 0;
     padding: 15px;
 }
 .top-nav a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    letter-spacing: 0.8px;
 }
-.top-nav a:hover{
+.top-nav a:hover {
     color: #FF8314;
     transition: #FF8314 .3s linear;
+}
+.titles {
+    text-align: center;
+    color: #080E45;
+    font-size: 23px;   
+}
+.text{
+    position: absolute;
+    color:#fff;
+    top: 130px;
+    width: 250px;
+    line-height: 40px;
+    padding: 120px;
+    font-family: 'Oxanium', cursive;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 2px #080E45;
 }
