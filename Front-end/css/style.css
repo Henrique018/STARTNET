@@ -1,6 +1,7 @@
 body {
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
+    text-align: center;
 }
 #top-header {
     height: 120px;
@@ -10,6 +11,7 @@ body {
 }
 .logo {
     margin: 13px 0 0 180px;
+    float: left;
 }
 .top-nav {
     position: absolute;
@@ -44,12 +46,75 @@ body {
 .text{
     position: absolute;
     color:#fff;
-    top: 130px;
+    top: 80px;
     width: 250px;
-    line-height: 40px;
+    line-height: 55px;
     padding: 120px;
     font-family: 'Oxanium', cursive;
     font-size: 18px;
     letter-spacing: 3px;
     text-shadow: 2px 2px 2px #080E45;
+}
+.col-1_4{
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+    padding-top: 30px;
+}
+.box{
+    border: 4px solid #080E45;
+    box-shadow: 0 0 15px -6px black;
+    width: 206px;
+    height: 338px;
+    border-radius: 50px;
+}
+.box-middle{
+    border: 4px solid #080E45;
+    box-shadow: 0 0 15px -6px black;
+    width: 206px;
+    height: 338px;
+    border-radius: 50px;
+    background: #60ECFF;
+}
+.number{
+    font-size: 65px;
+    color: #080E45;
+    text-shadow: 3px 3px 5px rgba(15, 15, 15, 0.329);
+    line-height: 90px;
+}
+.mega{
+    display: block;
+    color: #080E45;
+    font-size: 19px;
+    text-shadow: 2px 2px 5px rgba(15, 15, 15, 0.329);
+}
+.p-wifi{
+    color: #080E45;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.price{
+    font-size: 35px;
+    color: #FF8314;
+}
+.button-sign, .button-sign-middle{
+    color: white;
+    font-size: 18px;
+    background: #FF8314;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 10px;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.button-sign:hover{
+    background: #0CDDE8;
+    transition: #0CDDE8 .3s linear;
+}
+.button-sign-middle:hover{
+    background-color: white;
+    color: #FF8314;
+    transition: #FF8314 .3s linear;
 }
