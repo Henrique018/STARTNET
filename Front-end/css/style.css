@@ -118,3 +118,18 @@ body {
     color: #FF8314;
     transition: #FF8314 .3s linear;
 }
+.titlep{
+    color: #080E45;
+    font-size: 18px;
+}
+.main-content-title{
+    font-size: 17px;
+    color: #FF8314;
+}
+.main-content-article span[class^=icon]{
+    font-size: 32px;
+    color: #FF8314;
+}
+.main-content-article p {
+    color: #080E45;
+}
