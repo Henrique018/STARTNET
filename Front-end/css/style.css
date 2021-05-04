@@ -3,6 +3,12 @@ body {
     font-weight: bold;
     text-align: center;
 }
+.maxwidth {
+    max-width: 77.25em ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #top-header {
     height: 120px;
     width: 1663px;
@@ -38,12 +44,16 @@ body {
     color: #FF8314;
     transition: #FF8314 .3s linear;
 }
+.main-title {
+    text-transform: uppercase;
+    color: #080E45;
+    font-size: 23px; 
+}
 .titles {
-    text-align: center;
     color: #080E45;
     font-size: 23px;   
 }
-.text{
+.text {
     position: absolute;
     color:#fff;
     top: 80px;
@@ -55,20 +65,19 @@ body {
     letter-spacing: 3px;
     text-shadow: 2px 2px 2px #080E45;
 }
-.col-1_4{
+.col-1_4 {
     display: inline-block;
-    text-align: center;
     margin-right: 20px;
     padding-top: 30px;
 }
-.box{
+.box {
     border: 4px solid #080E45;
     box-shadow: 0 0 15px -6px black;
     width: 206px;
     height: 338px;
     border-radius: 50px;
 }
-.box-middle{
+.box-middle {
     border: 4px solid #080E45;
     box-shadow: 0 0 15px -6px black;
     width: 206px;
@@ -76,28 +85,28 @@ body {
     border-radius: 50px;
     background: #60ECFF;
 }
-.number{
+.number {
     font-size: 65px;
     color: #080E45;
     text-shadow: 3px 3px 5px rgba(15, 15, 15, 0.329);
     line-height: 90px;
 }
-.mega{
+.mega {
     display: block;
     color: #080E45;
     font-size: 19px;
     text-shadow: 2px 2px 5px rgba(15, 15, 15, 0.329);
 }
-.p-wifi{
+.p-wifi {
     color: #080E45;
     font-size: 18px;
     text-transform: uppercase;
 }
-.price{
+.price {
     font-size: 35px;
     color: #FF8314;
 }
-.button-sign, .button-sign-middle{
+.button-sign, .button-sign-middle {
     color: white;
     font-size: 18px;
     background: #FF8314;
@@ -109,27 +118,84 @@ body {
     padding-right: 20px;
     cursor: pointer;
 }
-.button-sign:hover{
+.button-sign:hover {
     background: #0CDDE8;
     transition: #0CDDE8 .3s linear;
 }
-.button-sign-middle:hover{
+.button-sign-middle:hover {
     background-color: white;
     color: #FF8314;
     transition: #FF8314 .3s linear;
 }
-.titlep{
+.titlep {
     color: #080E45;
     font-size: 18px;
 }
-.main-content-title{
+.main-content {
+    background: #E0E0E0;
+    margin-top: 50px;
+    height: 450px;
+    padding: 1px;
+}
+.col-1_2 {
+    display: inline-block;
+    margin: 0 100px;
+    padding-top: 20px;
+}
+.main-content-title {
     font-size: 17px;
     color: #FF8314;
 }
-.main-content-article span[class^=icon]{
+.main-content-article span[class^=icon] {
     font-size: 32px;
     color: #FF8314;
 }
 .main-content-article p {
     color: #080E45;
+}
+.company-title {
+     font-size: 25px;
+     color: #080E45;
+}
+.content-p {
+    font-size: 15px;
+    color: #090808;
+}
+.icon {
+    font-size: 35px;
+    color: #080E45;
+}
+.main-footer {
+    background: #080E45;
+    bottom: 0;
+    left: 0;
+}
+.ul-icons {
+    display: inline-block;
+    font-size: 30px;
+}
+.main-footer {
+    padding: 1px;
+}
+
+.main-footer ul {
+    margin: 0;
+    padding: 0;
+}
+.footer-nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 5px 0 0 0;
+    padding: 2;
+}
+
+.footer-p {
+    color: #fff;
+    font-size: 17px;
+}
+.icon-facebook {
+    color: rgb(54, 135, 241);
+}
+.icon-instagram {
+    color: rgb(176, 0, 211);
 }
