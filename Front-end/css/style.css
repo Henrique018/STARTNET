@@ -135,7 +135,7 @@ body {
   color: #ff8314;
 }
 .button-sign,
-.button-sign-middle {
+.middle {
   color: white;
   font-size: 18px;
   background: #ff8314;
@@ -151,7 +151,7 @@ body {
   background: #0cdde8;
   transition: #0cdde8 0.3s linear;
 }
-.button-sign-middle:hover {
+.middle:hover {
   background-color: white;
   color: #ff8314;
   transition: #ff8314 0.3s linear;

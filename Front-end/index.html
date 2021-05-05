@@ -5,24 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:wght@633&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400&family=Rubik:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="icomoon/style.css" />
-    <script
-      src="https://kit.fontawesome.com/7c615c2452.js"
-      crossorigin="anonymous"
-    ></script>
     <title>STARTNET</title>
   </head>
 
@@ -81,7 +71,7 @@
             <span class="price">
               <p>R$89,90</p>
             </span>
-            <button class="button-sign-middle">Assine já</button>
+            <button class="button-sign middle">Assine já</button>
           </div>
         </article>
         <article class="col-1_4">
@@ -200,5 +190,29 @@
       </nav>
       <p class="footer-p">Startnet-cnpj: 48.520.165/0003-90</p>
     </footer>
+
+    <!-- MODAL -->
+    <dialog id="cepDialog">
+      <div class="content">
+        <span class="closeDialog">&times;</span>
+        <p class="title">STARTNET</p>
+        <p>Verifique a disponibilidade em seu endereço</p>
+        <form method="dialog">
+          <input type="number" id="cep" placeholder="Digite seu CEP" />
+          <span>
+            <a href="http://www.buscacep.correios.com.br/sistemas/buscacep/" target="_blank">
+              Esqueci meu CEP
+            </a>
+          </span>
+          <input type="text" placeholder="Nº da sua residencia" />
+          <button type="submit">Consultar</button>
+        </form>
+      </div>
+    </dialog>
+    <script src="./js/modal.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7c615c2452.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
