@@ -8,6 +8,13 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.main-title {
+  color: #080e45;
+}
+.middle-title {
+    text-transform: uppercase;
+    color: #080e45;
+}
 
 .top-header {
   display: flex;
@@ -18,7 +25,7 @@ body {
 }
 .logo {
   width: 100%;
-  height: 95px;
+  height: 100;
 }
 .top-nav ul {
   margin: 0;
@@ -67,7 +74,7 @@ body {
   height: 100%;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(39, 39, 39, 0.219), rgba(0, 0, 0, 0.5)),
     url("../assets/website_cover.jpg");
   background-repeat: no-repeat;
 }
@@ -183,17 +190,39 @@ body {
   color: #080e45;
 }
 .company-title {
-  font-size: 25px;
+  font-size: 28px;
   color: #080e45;
+  margin-bottom: 50px;
+}
+.content-article {
+    margin-bottom: 30px;
+}
+.titles {
+  color: #080e45;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.icon {
+  font-size: 60px;
+  color: #080e45;
+  margin-right: 20px;
+}
+.container {
+  display: inline-flex;
+  align-items:center;
 }
 .content-p {
   font-size: 15px;
   color: #090808;
+  margin-right: 75px;
+  width: 250px;
+
 }
-.icon {
-  font-size: 35px;
-  color: #080e45;
+.col-1_3 {
+  display: inline-block;
+  
 }
+
 .main-footer {
   background: #080e45;
   bottom: 0;
