@@ -25,7 +25,6 @@ body {
 }
 .logo {
   width: 100%;
-  height: 100px;
 }
 .top-nav ul {
   margin: 0;
@@ -66,6 +65,7 @@ body {
     margin: 0;
     padding: 10px;
   }
+  
 }
 
 .banner {
@@ -101,7 +101,7 @@ body {
 }
 
 .col-1_4 {
-  display: inline-block;
+  display: inline-grid;
   margin-right: 20px;
   padding-top: 30px;
 }
@@ -170,13 +170,13 @@ body {
 .main-content {
   background: #e0e0e0;
   margin-top: 50px;
-  height: 450px;
+  height: 470px;
   padding: 1px;
 }
 .col-1_2 {
-  display: inline-block;
-  margin: 0 100px;
-  padding-top: 20px;
+  width: 38%;
+  display: inline-grid;
+
 }
 .main-content-title {
   font-size: 17px;
@@ -192,7 +192,7 @@ body {
 .company-title {
   font-size: 28px;
   color: #080e45;
-  margin-bottom: 50px;
+  margin: 40px 0 50px;
 }
 .content-article {
     margin-bottom: 30px;
@@ -218,11 +218,6 @@ body {
   width: 250px;
 
 }
-.col-1_3 {
-  display: inline-block;
-  
-}
-
 .main-footer {
   background: #080e45;
   bottom: 0;
