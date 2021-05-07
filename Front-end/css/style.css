@@ -124,22 +124,25 @@ body {
   font-size: 65px;
   color: #080e45;
   text-shadow: 3px 3px 5px rgba(15, 15, 15, 0.329);
-  line-height: 90px;
+  line-height: 100px;
 }
 .mega {
   display: block;
   color: #080e45;
-  font-size: 19px;
+  font-size: 20px;
   text-shadow: 2px 2px 5px rgba(15, 15, 15, 0.329);
+  line-height: 0;
 }
 .p-wifi {
   color: #080e45;
   font-size: 18px;
   text-transform: uppercase;
+  line-height: 5;
 }
 .price {
   font-size: 35px;
   color: #ff8314;
+  line-height:0;
 }
 .button-sign,
 .middle {
@@ -174,7 +177,7 @@ body {
   padding: 1px;
 }
 .col-1_2 {
-  width: 38%;
+  width: 35%;
   display: inline-grid;
 
 }
