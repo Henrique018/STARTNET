@@ -47,7 +47,7 @@
 					<span class="price">
 						<p>R$49,90</p>
 					</span>
-					<button class="button-sign">Assine já</button>
+          <button class="button-sign" data-plano="20">Assine já</button>
 				</div>
 			</article>
 			<article class="col-1_4">
@@ -69,7 +69,7 @@
 					<span class="price">
 						<p>R$89,90</p>
 					</span>
-					<button class="button-sign middle">Assine já</button>
+          <button class="button-sign middle" data-plano="100">Assine já</button>
 				</div>
 			</article>
 			<article class="col-1_4">
@@ -80,7 +80,7 @@
 					<span class="price">
 						<p>R$109,90</p>
 					</span>
-					<button class="button-sign">Assine já</button>
+          <button class="button-sign" data-plano="150">Assine já</button>
 				</div>
 			</article>
 			<article class="col-1_4">
@@ -91,7 +91,7 @@
 					<span class="price">
 						<p>R$139,90</p>
 					</span>
-					<button class="button-sign">Assine já</button>
+          <button class="button-sign" data-plano="200">Assine já</button>
 				</div>
 			</article>
 		</div>
@@ -193,19 +193,18 @@
 			<p class="title">STARTNET</p>
 			<p>Verifique a disponibilidade em seu endereço</p>
 			<form method="dialog">
-				<input type="number" id="cep" placeholder="Digite seu CEP" />
+				<input type="number" id="cep" placeholder="Digite seu CEP*" required />
 				<span>
 					<a href="http://www.buscacep.correios.com.br/sistemas/buscacep/" target="_blank">
 						Esqueci meu CEP
 					</a>
 				</span>
-				<input type="text" placeholder="Nº da sua residencia" />
-				<button type="submit">Consultar</button>
+				<input type="number" id="numeroCasa" placeholder="Nº da sua residencia*" required />
+				<button type="submit" class="btnConsulta">Consultar</button>
 			</form>
 		</div>
 	</dialog>
 	<script src="./js/modal.js"></script>
 	<script src="https://kit.fontawesome.com/7c615c2452.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
