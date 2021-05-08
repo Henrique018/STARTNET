@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Rubik", sans-serif;
   font-weight: bold;
@@ -20,7 +23,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  min-height: 120px;
+  min-height: 110px;
   background: #080e45;
 }
 .logo {
@@ -46,7 +49,6 @@ body {
   color: #ff8314;
   transition: #ff8314 0.3s linear;
 }
-
 @media screen and (max-width: 760px) {
   .top-header {
     display: flex;
