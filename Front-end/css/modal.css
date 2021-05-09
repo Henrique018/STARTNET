@@ -7,6 +7,7 @@ dialog::backdrop {
 }
 
 dialog .closeDialog {
+  color: #080e45;
   font-size: 30px;
   position: absolute;
   right: 35px;
