@@ -1,6 +1,8 @@
+import { getZipcode } from "./utils/getZipcode.js";
+
 const signButtonsCollection = document.getElementsByClassName('button-sign');
-const closeButton = document.getElementsByClassName('closeDialog')[0];
 const cepDialog = document.querySelector('#cepDialog');
+const closeButton = document.getElementsByClassName('closeDialog')[0];
 const cepInput = document.querySelector('#cep');
 const numberInput = document.querySelector('#numeroCasa');
 const ConsultButton = document.querySelector('.btnConsulta');
@@ -12,7 +14,7 @@ signButtons.forEach(button => {
     button.addEventListener('click', () => {
         cepDialog.showModal();
 
-        localStorage.setItem('planoEscolhido', JSON.stringify(button.dataset.plano));
+        sessionStorage.setItem('planoEscolhido', JSON.stringify(button.dataset.plano));
     })
 });
 
@@ -22,46 +24,38 @@ cepInput.addEventListener('change', function onChange() {
     ConsultButton.value = cepInput.value;
 });
 
+let numero;
 numberInput.addEventListener('change', function onChange() {
-    numero = numberInput.value;
+     numero = numberInput.value;
 });
 
 cepDialog.addEventListener('close', async function onClose() {
-    if(cepDialog.returnValue === '') return;
+    if(cepDialog.returnValue == '') return;
 
     // se não preencheu corretamente
-    if(cepDialog.returnValue.length > 1 && cepDialog.returnValue.length < 8 ||cepDialog.returnValue.length > 8) {
+    if(cepDialog.returnValue.length >= 1 && cepDialog.returnValue.length < 8 ||cepDialog.returnValue.length > 8) {
         alert('Parece que há um erro com o CEP preenchido');
         cepDialog.showModal();
+        cepInput.focus();
         return;
     }
     
     try {
-        const response = await getZipcode(String(cepDialog.returnValue));
+        const response = await getZipcode(cepDialog.returnValue);
 
-        if(response?.noService) {
-            alert(response.noService);
-            return;
-        }
+        response?.noService && alert(response.noService);
 
-        console.log({ddd: response.ddd, bairro: response.bairro});
+        const {uf, localidade,bairro, logradouro} = response;
+
+        sessionStorage.setItem('userAdress', JSON.stringify({
+            uf,
+            localidade,
+            bairro,
+            logradouro,
+            numero: numero,
+        }));
     }
     catch(e) {
         console.log(e);
     }
-    
 });
-
-async function getZipcode(zipcode) {
-    const options = {
-        method: 'POST',
-        body: JSON.stringify({"cep": zipcode}),
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    }
-    const response = await fetch('http://localhost:3000/cep', options)
-    .then(res => res.json())
-    .then(res => res);
-    return response;
-}
