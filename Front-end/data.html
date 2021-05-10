@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400&family=Rubik:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="icomoon/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+        integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+        crossorigin="anonymous"></script>
+    <title>checkout</title>
+</head>
+<body>
+    <h1>Preencha seus dados pessoais</h1>
+    <fieldset>
+        <div>
+            <label>Nome completo</label>
+            <input type="text" name="nome" id="nome" placeholder="nome">
+        </div>
+        <div>
+            <label>Telefone com DDD</label>
+            <input type="tel" class="phone" maxlength="11" minlength="11" placeholder="telefone">
+        </div>
+        <div>
+            <label>RG</label>
+            <input type="text" class="rg" maxlength="10" minlength="7" placeholder="RG">
+        </div>
+        <div>
+            <label>Nascimento</label>
+            <input type="date">
+        </div>
+        <div>
+            <label>CPF-Somente números</label>
+            <input type="text" class="cpf" maxlength="11" minlength="11" placeholder="CPF">
+        </div>
+        <div>
+            <label>E-mail</label>
+            <input type="email" placeholder="email">
+        </div>
+        <h1>Confira seu endereço e preencha os dados abaixo</h1>
+        <div>
+            <label for="adress">Endereço de instalação</label>
+            <input type="text" placeholder="endereço de instalação">
+            <label for="adress">Número</label>
+            <input type="number" placeholder="número" >
+        </div>
+        <div>
+            <label>Complemento</label>
+            <input type="text" placeholder="complemento">
+        </div>
+        <div>
+            <label>Estado</label>
+            <input type="text" placeholder="estado">
+        </div>
+        <div>
+            <label>Cidade</label>
+            <input type="text" placeholder="cidade">
+        </div>
+        <div>
+            <label>CEP</label>
+            <input type="text" class="cep" placeholder="CEP">
+        </div>
+    </fieldset>
+    <button><input type="button" value="Prosseguir para a próxima etapa" class="button-submit"></button>
+    <script>
+        $(document).ready(function () {
+            $('.cep').mask('00000-000');
+            $('.phone').mask('(00) 00000-0000');
+            $('.cpf').mask('000.000.000-00', {reverse: true});
+            $('.rg').mask('00.000.000-0', {reverse: true});
+        });
+    </script>
+</body>
+</html>
