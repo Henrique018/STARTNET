@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400&family=Rubik:wght@400;700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="icomoon/style.css" />
+    <link rel="stylesheet" href="./css/data.css">
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
@@ -17,65 +18,104 @@
         crossorigin="anonymous"></script>
     <title>checkout</title>
 </head>
+
 <body>
-    <h1>Preencha seus dados pessoais</h1>
-    <fieldset>
+    <header class="top-header" id="home">
         <div>
-            <label>Nome completo</label>
-            <input type="text" name="nome" id="nome" placeholder="nome">
+            <a href="#menu">
+                <img class="logo" src="./assets/logo-menu.png" alt="startnet" /></a>
         </div>
-        <div>
-            <label>Telefone com DDD</label>
-            <input type="tel" class="phone" maxlength="11" minlength="11" placeholder="telefone">
-        </div>
-        <div>
-            <label>RG</label>
-            <input type="text" class="rg" maxlength="10" minlength="7" placeholder="RG">
-        </div>
-        <div>
-            <label>Nascimento</label>
-            <input type="date">
-        </div>
-        <div>
-            <label>CPF-Somente números</label>
-            <input type="text" class="cpf" maxlength="11" minlength="11" placeholder="CPF">
-        </div>
-        <div>
-            <label>E-mail</label>
-            <input type="email" placeholder="email">
-        </div>
-        <h1>Confira seu endereço e preencha os dados abaixo</h1>
-        <div>
-            <label for="adress">Endereço de instalação</label>
-            <input type="text" placeholder="endereço de instalação">
-            <label for="adress">Número</label>
-            <input type="number" placeholder="número" >
-        </div>
-        <div>
-            <label>Complemento</label>
-            <input type="text" placeholder="complemento">
-        </div>
-        <div>
-            <label>Estado</label>
-            <input type="text" placeholder="estado">
-        </div>
-        <div>
-            <label>Cidade</label>
-            <input type="text" placeholder="cidade">
-        </div>
-        <div>
-            <label>CEP</label>
-            <input type="text" class="cep" placeholder="CEP">
-        </div>
-    </fieldset>
-    <button><input type="button" value="Prosseguir para a próxima etapa" class="button-submit"></button>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#plans">Planos</a></li>
+                <li><a href="#company-content">A Empresa</a></li>
+                <li><a href="#menu">Central do Assinante</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="dataset">
+        <fieldset>
+            <legend>Preencha seus dados pessoais</legend>
+            <div>
+                <label>Nome completo</label>
+                <input type="text" name="nome" id="nome" placeholder="nome">
+            </div>
+            <div>
+                <label>Telefone com DDD</label>
+                <input type="tel" class="phone" maxlength="11" minlength="11" placeholder="telefone">
+            </div>
+            <div>
+                <label>RG</label>
+                <input type="text" class="rg" maxlength="10" minlength="7" placeholder="RG">
+            </div>
+            <div>
+                <label>Nascimento</label>
+                <input type="date">
+            </div>
+            <div>
+                <label>CPF-Somente números</label>
+                <input type="text" class="cpf" maxlength="11" minlength="11" placeholder="CPF">
+            </div>
+            <div>
+                <label>E-mail</label>
+                <input type="email" placeholder="email">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Confira seu endereço e preencha os dados abaixo</legend>
+            <div>
+                <label for="adress">Endereço de instalação</label>
+                <input type="text" placeholder="endereço de instalação">
+                <label for="adress">Número</label>
+                <input type="number" placeholder="número">
+            </div>
+            <div>
+                <label>Complemento</label>
+                <input type="text" placeholder="complemento">
+            </div>
+            <div>
+                <label>Estado</label>
+                <input type="text" placeholder="estado">
+            </div>
+            <div>
+                <label>Cidade</label>
+                <input type="text" placeholder="cidade">
+            </div>
+            <div>
+                <label>CEP</label>
+                <input type="text" class="cep" placeholder="CEP">
+            </div>
+        </fieldset>
+        <button><input type="button" value="Prosseguir para a próxima etapa" class="button-submit"></button>
+    </section>
     <script>
         $(document).ready(function () {
             $('.cep').mask('00000-000');
             $('.phone').mask('(00) 00000-0000');
-            $('.cpf').mask('000.000.000-00', {reverse: true});
-            $('.rg').mask('00.000.000-0', {reverse: true});
+            $('.cpf').mask('000.000.000-00', { reverse: true });
+            $('.rg').mask('00.000.000-0', { reverse: true });
         });
     </script>
+    <footer class="main-footer">
+        <p class="footer-p">Telefone e Whatsapp: +55 11 1111-2222</p>
+        <p class="footer-p">Siga-nos em nossas<br />redes sociais:</p>
+        <nav class="footer-nav">
+            <ul class="ul-icons">
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" class="icon-instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank" class="icon-facebook">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <p class="footer-p">Startnet-cnpj: 48.520.165/0003-90</p>
+    </footer>
 </body>
+
 </html>
