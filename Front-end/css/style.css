@@ -238,15 +238,12 @@ body {
   background: #080e45;
   bottom: 0;
   left: 0;
+  padding: 1px;
 }
 .ul-icons {
   display: inline-block;
   font-size: 30px;
 }
-.main-footer {
-  padding: 1px;
-}
-
 .main-footer ul {
   margin: 0;
   padding: 0;
