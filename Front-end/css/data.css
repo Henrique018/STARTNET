@@ -1,0 +1,99 @@
+body {
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    height:100%;
+}
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100px;
+    background: #080e45;
+    width: 100%;
+}
+  .logo {
+    width: 100%;
+}
+  .top-nav ul {
+    margin: 0;
+    padding: 0;
+}
+  .top-nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 30px 15px 0 0;
+    padding: 15px;
+}
+  .top-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+}
+  .top-nav a:hover {
+    color: #ff8314;
+    transition: #ff8314 0.3s linear;
+}
+.dataset {
+    padding: 100px;
+    margin-top: 50px;
+}
+@media screen and (max-width: 760px) {
+    .top-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .top-header > div {
+      display: none;
+    }
+    .top-nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .top-nav ul li {
+      margin: 0;
+      padding: 10px;
+    }
+    .dataset {
+        padding: 0;
+        margin-top: 0;
+    }
+}
+.main-footer {
+    position: absolute;
+    bottom: 0;
+    background: #080e45;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 0;
+  }
+  .ul-icons {
+    display: inline-block;
+    font-size: 20px;
+  }
+  
+  .main-footer ul {
+    margin: 0;
+    padding: 0;
+  }
+  .footer-nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 5px 0 0 0;
+    padding: 2px;
+  }
+  
+  .footer-p {
+    color: #fff;
+    font-size: 15px;
+  }
+  .icon-facebook {
+    color: rgb(54, 135, 241);
+  }
+  .icon-instagram {
+    color: rgb(176, 0, 211);
+  }
+  
