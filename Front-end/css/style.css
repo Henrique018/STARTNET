@@ -5,18 +5,16 @@ body {
   font-family: "Rubik", sans-serif;
   font-weight: bold;
   text-align: center;
-}
-.maxwidth {
-  max-width: 70.25em;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  width: 100%;
 }
 .main-title {
   color: #080e45;
+  margin: 40px 0 50px 0;
 }
 .middle-title {
-    text-transform: uppercase;
-    color: #080e45;
+  text-transform: uppercase;
+  color: #080e45;
 }
 
 .top-header {
@@ -67,7 +65,6 @@ body {
     margin: 0;
     padding: 10px;
   }
-  
 }
 
 .banner {
@@ -103,15 +100,16 @@ body {
 }
 
 .col-1_4 {
-  display: inline-grid;
-  margin-right: 20px;
-  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(208px, auto));
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
 }
 .box {
   border: 4px solid #080e45;
   box-shadow: 0 0 15px -6px black;
-  width: 206px;
-  height: 338px;
+  min-height: 338px;
   border-radius: 50px;
 }
 .box-middle {
@@ -144,7 +142,7 @@ body {
 .price {
   font-size: 35px;
   color: #ff8314;
-  line-height:0;
+  line-height: 0;
 }
 .button-sign,
 .middle {
@@ -180,7 +178,8 @@ body {
 .col-1_2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
+  max-width: 72%;
+  margin: 0 auto;
 }
 .main-content-title {
   text-align: left;
@@ -211,7 +210,7 @@ body {
   margin: 40px 0 50px;
 }
 .content-article {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .titles {
   color: #080e45;
@@ -225,7 +224,7 @@ body {
 }
 .container {
   display: inline-flex;
-  align-items:center;
+  align-items: center;
 }
 .content-p {
   text-align: left;

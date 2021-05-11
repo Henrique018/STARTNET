@@ -43,17 +43,23 @@ cepDialog.addEventListener('close', async function onClose() {
     try {
         const response = await getZipcode(cepDialog.returnValue);
 
-        response?.noService && alert(response.noService);
+        if(response?.noService) {
+            alert(response.noService)
+        } else {
+            const {uf, localidade,bairro, logradouro} = response;
 
-        const {uf, localidade,bairro, logradouro} = response;
+            sessionStorage.setItem('userAdress', JSON.stringify({
+                uf,
+                localidade,
+                bairro,
+                logradouro,
+                numero
+            }));
+    
+            window.location.href = `${location.protocol}//${location.host}${location.pathname}data.html`;
+        } 
 
-        sessionStorage.setItem('userAdress', JSON.stringify({
-            uf,
-            localidade,
-            bairro,
-            logradouro,
-            numero: numero,
-        }));
+        
     }
     catch(e) {
         console.log(e);
