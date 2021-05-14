@@ -1,7 +1,8 @@
 body {
     font-family: "Rubik", sans-serif;
-    font-weight: bold;
     height:100%;
+    text-align: center;
+    background: rgb(219, 217, 217);
 }
 .top-header {
     display: flex;
@@ -23,6 +24,7 @@ body {
     display: inline-block;
     margin: 30px 15px 0 0;
     padding: 15px;
+    font-weight: bold;
 }
   .top-nav a {
     color: white;
@@ -35,9 +37,51 @@ body {
     transition: #ff8314 0.3s linear;
 }
 .dataset {
-    padding: 100px;
-    margin-top: 50px;
+    margin-top: 70px;
 }
+.formdata label {
+  display: block;
+}
+.form-adress label {
+  display: block;
+}
+h1 {
+  font-size: 20px;
+  color: #080e45;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+fieldset {
+  border: none;
+}
+.group {
+  display: inline-block;
+  margin-top: 9px;
+  margin-left: 9px;
+}
+div input {
+  height: 20px;
+  margin-top: 5px;
+}
+
+.date {
+  width: 198px;
+}
+.button-submit {
+  margin-top: 30px;
+  background: #080e45;
+  color: #fff;
+  font-weight: bold;
+  height: 40px;
+  width: 250px;
+  border: none;
+  border-radius: 30px;
+}
+.button-submit:hover {
+  background: #ff8314;
+  transition: #ff8314 0.3s linear;
+}
+
 @media screen and (max-width: 760px) {
     .top-header {
       display: flex;
@@ -60,6 +104,13 @@ body {
         padding: 0;
         margin-top: 60px;
     }
+    .group {
+      display: inline-block;
+    }
+    .dataset {
+      margin-top: 0;
+  }
+    
 }
 .main-footer {
     position: absolute;
@@ -69,6 +120,7 @@ body {
     height: 100px;
     text-align: center;
     line-height: 0;
+    font-weight: bold;
   }
   .ul-icons {
     display: inline-block;
