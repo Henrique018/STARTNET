@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/data.css">
     <script src="https://kit.fontawesome.com/7c615c2452.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-	<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400&family=Rubik:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400&family=Rubik:wght@400;700&display=swap">
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
@@ -32,59 +32,65 @@
         </nav>
     </header>
     <section class="dataset">
-        <fieldset>
-            <legend>Preencha seus dados pessoais</legend>
-            <div>
-                <label>Nome completo</label>
-                <input type="text" name="nome" id="nome" placeholder="nome">
-            </div>
-            <div>
-                <label>Telefone com DDD</label>
-                <input type="tel" class="phone" maxlength="11" minlength="11" placeholder="telefone">
-            </div>
-            <div>
-                <label>RG</label>
-                <input type="text" class="rg" maxlength="10" minlength="7" placeholder="RG">
-            </div>
-            <div>
-                <label>Nascimento</label>
-                <input type="date">
-            </div>
-            <div>
-                <label>CPF-Somente números</label>
-                <input type="text" class="cpf" maxlength="11" minlength="11" placeholder="CPF">
-            </div>
-            <div>
-                <label>E-mail</label>
-                <input type="email" placeholder="email">
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Confira seu endereço e preencha os dados abaixo</legend>
-            <div>
-                <label for="adress">Endereço de instalação</label>
-                <input type="text" placeholder="endereço de instalação">
-                <label for="adress">Número</label>
-                <input type="number" placeholder="número">
-            </div>
-            <div>
-                <label>Complemento</label>
-                <input type="text" placeholder="complemento">
-            </div>
-            <div>
-                <label>Estado</label>
-                <input type="text" placeholder="estado">
-            </div>
-            <div>
-                <label>Cidade</label>
-                <input type="text" placeholder="cidade">
-            </div>
-            <div>
-                <label>CEP</label>
-                <input type="text" class="cep" placeholder="CEP">
-            </div>
-        </fieldset>
-        <button><input type="button" value="Prosseguir para a próxima etapa" class="button-submit"></button>
+            <form action="#" method="POST" class="formdata">
+                <fieldset>
+                    <h1>Preencha seus dados pessoais</h1>
+                    <div class="group">
+                        <label>Nome completo</label>
+                        <input type="text" name="nome" placeholder="nome" autofocus>
+                    </div>
+                    <div class="group">
+                        <label>E-mail</label>
+                        <input type="email" placeholder="email">
+                    </div><br>
+                    <div class="group">
+                        <label>RG</label>
+                        <input type="text" class="rg" maxlength="10" minlength="7" placeholder="RG">
+                    </div>
+                    <div class="group">
+                        <label>CPF-Somente números</label>
+                        <input type="text" class="cpf" maxlength="11" minlength="11" placeholder="CPF">
+                    </div><br>
+                    <div class="group">
+                        <label>Nascimento</label>
+                        <input type="date" class="date">
+                    </div>
+                    <div class="group">
+                        <label>Telefone com DDD</label>
+                        <input type="tel" class="phone" maxlength="11" minlength="11" placeholder="telefone">
+                    </div>
+                </fieldset>
+            </form>
+            <form action="#" method="POST" class="form-adress">
+                <fieldset>
+                    <h1>Confira seu endereço e preencha os dados abaixo</h1>
+                    <div class="adress group">
+                        <label for="adress">Endereço de instalação</label>
+                        <input type="text" placeholder="endereço de instalação" id="adress">
+                    </div>
+                    <div class="adress group">
+                        <label for="adress">Número</label>
+                        <input type="number" placeholder="número" id="number">
+                    </div><br>
+                    <div class="group">
+                        <label>Complemento</label>
+                        <input type="text" placeholder="complemento">
+                    </div>
+                    <div class="group">
+                        <label>CEP</label>
+                        <input type="text" class="cep" placeholder="CEP">
+                    </div><br>
+                    <div class="group">
+                        <label>Estado</label>
+                        <input type="text" placeholder="estado">
+                    </div>
+                    <div class="group">
+                        <label>Cidade</label>
+                        <input type="text" placeholder="cidade">
+                    </div>
+                </fieldset>
+            </form>
+        <button class="button-submit">Próxima etapa</button>
     </section>
     <script>
         $(document).ready(function () {
