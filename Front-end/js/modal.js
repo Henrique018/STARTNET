@@ -55,11 +55,8 @@ cepDialog.addEventListener('close', async function onClose() {
                 logradouro,
                 numero
             }));
-    
             window.location.href = `${location.protocol}//${location.host}${location.pathname}data.html`;
         } 
-
-        
     }
     catch(e) {
         console.log(e);

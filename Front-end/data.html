@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/data.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/7c615c2452.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400&family=Rubik:wght@400;700&display=swap">
@@ -21,7 +22,7 @@
 <body>
     <header class="top-header" id="home">
         <div>
-            <a href="#menu">
+            <a href="index.html">
                 <img class="logo" src="./assets/logo-menu.png" alt="startnet" /></a>
         </div>
         <nav class="top-nav">
@@ -32,36 +33,42 @@
         </nav>
     </header>
     <section class="dataset">
-            <form  class="formdata">
-                <fieldset>
-                    <h1>Preencha seus dados pessoais</h1>
-                    <div class="group">
-                        <label for="nome">Nome completo</label>
-                        <input type="text" name="nome" placeholder="nome" id="nome" required autofocus>
+        <form  class="formdata">
+            <fieldset>
+                <legend>Preencha seus dados pessoais</legend>
+                    <div class="content">
+                        <div class="group">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" name="nome" placeholder="nome" id="nome" required autofocus>
+                        </div>
+                        <div class="group">
+                            <label for="email">E-mail</label>
+                            <input type="email" placeholder="email" id="email" required>
+                        </div>
+                        <div class="group">
+                            <label for="rg">RG</label>
+                            <input type="text" id="rg" maxlength="10" minlength="7" placeholder="RG" required>
+                        </div>
+                        <div class="group">
+                            <label for="cpf">CPF-Somente números</label>
+                            <input type="text" id="cpf" maxlength="11" minlength="11" placeholder="CPF" required>
+                        </div>
+                        <div class="group">
+                            <label for="phone">Telefone com DDD</label>
+                            <input type="tel" id="phone" maxlength="11" minlength="11" placeholder="telefone">
+                        </div>
+                        <div class="group">
+                            <label for="date">Data de nascimento</label>
+                             <input type="date" id="date" required>
+                        </div>
                     </div>
-                    <div class="group">
-                        <label for="email">E-mail</label>
-                        <input type="email" placeholder="email" id="email" required>
-                    </div><br>
-                    <div class="group">
-                        <label for="rg">RG</label>
-                        <input type="text" id="rg" maxlength="10" minlength="7" placeholder="RG" required>
-                    </div>
-                    <div class="group">
-                        <label for="cpf">CPF-Somente números</label>
-                        <input type="text" id="cpf" maxlength="11" minlength="11" placeholder="CPF" required>
-                    </div><br>
-                    <div class="group">
-                        <label for="date">Data de nascimento</label>
-                        <input type="date" id="date" required>
-                    </div>
-                    <div class="group">
-                        <label for="phone">Telefone com DDD</label>
-                        <input type="tel" id="phone" maxlength="11" minlength="11" placeholder="telefone">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <h1>Confira seu endereço e preencha os dados abaixo</h1>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Confirme seu endereço abaixo
+                </legend>
+                <div class="content">
                     <div class="adress group">
                         <label for="adress">Endereço de instalação</label>
                         <input type="text" placeholder="endereço de instalação" id="adress">
@@ -69,7 +76,7 @@
                     <div class="adress group">
                         <label for="number">Número</label>
                         <input type="number" placeholder="número" id="number">
-                    </div><br>
+                    </div>
                     <div class="group">
                         <label for="complemento">Complemento</label>
                         <input type="text" placeholder="complemento" id="complemento">
@@ -77,7 +84,7 @@
                     <div class="group">
                         <label for="cep">CEP</label>
                         <input type="text" id="cep" placeholder="CEP" required>
-                    </div><br>
+                    </div>
                     <div class="group">
                         <label for="estado">Estado</label>
                         <input type="text" placeholder="estado" id="estado" required>
@@ -86,16 +93,17 @@
                         <label for="cidade">Cidade</label>
                         <input type="text" placeholder="cidade" id="cidade" required>
                     </div>
-                </fieldset>
-                <button class="button-submit">Próxima etapa</button>
-            </form>
+                </div>
+            </fieldset>
+            <button class="button-submit">Próxima etapa</button>
+        </form>
     </section>
     <script>
         $(document).ready(function () {
-            $('.cep').mask('00000-000');
-            $('.phone').mask('(00) 00000-0000');
-            $('.cpf').mask('000.000.000-00', { reverse: true });
-            $('.rg').mask('00.000.000-0', { reverse: true });
+            $('#cep').mask('00000-000');
+            $('#phone').mask('(00) 00000-0000');
+            $('#cpf').mask('000.000.000-00', { reverse: true });
+            $('#rg').mask('00.000.000-0', { reverse: true });
         });
     </script>
     <footer class="main-footer">
@@ -118,5 +126,4 @@
         <p class="footer-p">Startnet-cnpj: 48.520.165/0003-90</p>
     </footer>
 </body>
-
 </html>

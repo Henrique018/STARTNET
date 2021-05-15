@@ -1,151 +1,92 @@
 body {
-    font-family: "Rubik", sans-serif;
-    height:100%;
-    text-align: center;
-    background: rgb(219, 217, 217);
-}
-.top-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    min-height: 100px;
-    background: #080e45;
-    width: 100%;
-}
-  .logo {
-    width: 100%;
-}
-  .top-nav ul {
-    margin: 0;
-    padding: 0;
-}
-  .top-nav li {
-    list-style: none;
-    display: inline-block;
-    margin: 30px 15px 0 0;
-    padding: 15px;
-    font-weight: bold;
-}
-  .top-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-}
-  .top-nav a:hover {
-    color: #ff8314;
-    transition: #ff8314 0.3s linear;
+  font-family: "Rubik", sans-serif;
+  background: rgb(217, 217, 217);
 }
 .dataset {
-    margin-top: 70px;
+  margin: 50px auto 50px auto;
 }
-.formdata label {
-  display: block;
-}
-.form-adress label {
-  display: block;
-}
-h1 {
-  font-size: 20px;
-  color: #080e45;
-  font-weight: bold;
-  margin-bottom: 25px;
-}
-fieldset {
-  border: none;
-}
-.group {
-  display: inline-block;
-  margin-top: 9px;
-  margin-left: 9px;
-}
-div input {
-  height: 20px;
-  margin-top: 5px;
+.formdata {
+  margin: 0 auto;
+  border-radius: 10px;
+  max-width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 0 18px 0;
 }
 
-.date {
-  width: 198px;
+legend {
+  font-size: 22px;
+  color: #080e45;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 14px;
+}
+
+fieldset {
+  border: none;
+  margin-top: 30px;
+}
+
+fieldset .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.group {
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+}
+
+.group label {
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+}
+
+.group input {
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 0.5px solid #777;
 }
 .button-submit {
   margin-top: 30px;
-  background: #080e45;
+  background: #ff8314;
   color: #fff;
   font-weight: bold;
   height: 40px;
   width: 250px;
   border: none;
   border-radius: 30px;
+  cursor: pointer;
+  align-self: center;
 }
 .button-submit:hover {
-  background: #ff8314;
-  transition: #ff8314 0.3s linear;
+  background: #080e45;
+  transition: background 0.2s linear;
 }
 
-@media screen and (max-width: 760px) {
-    .top-header {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .top-header > div {
-      display: none;
-    }
-    .top-nav ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .top-nav ul li {
-      margin: 0;
-      padding: 10px;
-    }
-    .dataset {
-        padding: 0;
-        margin-top: 60px;
-    }
-    .group {
-      display: inline-block;
-    }
-    .dataset {
-      margin-top: 0;
-  }
-    
-}
-.main-footer {
-    position: absolute;
-    bottom: 0;
-    background: #080e45;
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    line-height: 0;
-    font-weight: bold;
-  }
-  .ul-icons {
-    display: inline-block;
-    font-size: 20px;
-  }
-  
-  .main-footer ul {
-    margin: 0;
+@media screen and (max-width: 999px) {
+  .dataset {
     padding: 0;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
   }
-  .footer-nav li {
-    list-style: none;
-    display: inline-block;
-    margin: 5px 0 0 0;
-    padding: 2px;
+
+  .formdata {
+    width: 100%;
+    padding: 20px;
   }
-  
-  .footer-p {
-    color: #fff;
-    font-size: 15px;
+
+  fieldset .content {
+    display: flex;
+    flex-direction: column;
   }
-  .icon-facebook {
-    color: rgb(54, 135, 241);
+  .dataset {
+    margin-top: 0;
   }
-  .icon-instagram {
-    color: rgb(176, 0, 211);
-  }
-  
+}
