@@ -53,13 +53,11 @@ cepDialog.addEventListener('close', async function onClose() {
                 localidade,
                 bairro,
                 logradouro,
-                numero
+                numero,
+                cep: cepDialog.returnValue,
             }));
-    
             window.location.href = `${location.protocol}//${location.host}${location.pathname}data.html`;
         } 
-
-        
     }
     catch(e) {
         console.log(e);
