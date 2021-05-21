@@ -1,153 +1,251 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="./css/style.css" />
-	<link rel="stylesheet" href="./css/normalize.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:wght@633&display=swap"rel="stylesheet">
-	<link rel="stylesheet" href="icomoon/style.css">
+	<link rel="stylesheet" href="./css/modal.css" />
+	<link rel="stylesheet" href="./css/modal2.css">
+	<link rel="stylesheet" href="./css/normalize.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400&family=Rubik:wght@400;700&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="icomoon/style.css" />
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+        integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+        crossorigin="anonymous"></script>
 	<title>STARTNET</title>
 </head>
 
 <body>
-	<header id="top-header">
+	<header class="top-header" id="home">
 		<div>
-			<a href="#menu"><img class="logo" src="./assets/logo.png" alt="logo" style="height: 95px;"></a>
-			<nav class="top-nav">
-				<ul>
-					<li><a href="#menu">Home</a></li>
-					<li><a href="#menu">Planos</a></li>
-					<li><a href="#menu">A Empresa</a></li>
-					<li><a href="#menu">Central do Assinante</a></li>
-				</ul>
-			</nav>
+			<a href="#menu">
+				<img class="logo" src="./assets/logo-menu.png" alt="startnet" /></a>
 		</div>
+		<nav class="top-nav">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#plans">Planos</a></li>
+				<li><a href="#company-content">A Empresa</a></li>
+				<li><a href="#menu">Central do Assinante</a></li>
+			</ul>
+		</nav>
 	</header>
 	<section class="top-content">
-		<div class="image">
-			<img src="./assets/website_cover.jpg" alt="Capa.jpg"
-                style="width: 1663px; height: 550px; object-fit: cover; object-position: 50% 50%;">
-		</div>
-		<div class="text">
+		<div class="banner">
 			<h1>A fibra que você sempre sonhou agora ao seu alcance</h1>
 		</div>
 	</section>
-	<section id="middle-content">
-		<div class="maxwidth">
-			<h2 class="titles">Escolha o melhor plano para você</h2>
-			<div class="line"></div>
-			<article class="col-1_4">
+	<section class="middle-content" id="plans">
+		<h2 class="main-title">Escolha o melhor plano para você</h2>
+		<div class="col-1_4">
+			<article>
 				<div class="box">
 					<span class="number">20</span>
 					<span class="mega">mega</span>
 					<span class="p-wifi">Wi-fi grátis</span>
-					<span class="price"><p>R$49,90</p></span>
-					<button class="button-sign">Assine já</button>
+					<span class="price">
+						<p>R$49,90</p>
+					</span>
+					<button class="button-sign" data-plano="20">Assine já</button>
 				</div>
 			</article>
-			<article class="col-1_4">
+			<article>
 				<div class="box">
 					<span class="number">60</span>
 					<span class="mega">mega</span>
 					<span class="p-wifi">Wi-fi grátis</span>
-					<span class="price"><p>R$69,90</p></span>
-					<button class="button-sign">Assine já</button>
+					<span class="price">
+						<p>R$69,90</p>
+					</span>
+					<button class="button-sign" data-plano="60">Assine já</button>
 				</div>
 			</article>
-			<article class="col-1_4">
+			<article>
 				<div class="box-middle">
 					<span class="number">100</span>
 					<span class="mega">mega</span>
 					<span class="p-wifi">Wi-fi grátis</span>
-					<span class="price"><p>R$89,90</p></span>
-					<button class="button-sign-middle">Assine já</button>
+					<span class="price">
+						<p>R$89,90</p>
+					</span>
+					<button class="button-sign middle" data-plano="100">Assine já</button>
 				</div>
 			</article>
-			<article class="col-1_4">
+			<article>
 				<div class="box">
 					<span class="number">150</span>
 					<span class="mega">mega</span>
 					<span class="p-wifi">Wi-fi grátis</span>
-					<span class="price"><p>R$109,90</p></span>
-					<button class="button-sign">Assine já</button>
+					<span class="price">
+						<p>R$109,90</p>
+					</span>
+					<button class="button-sign" data-plano="150">Assine já</button>
 				</div>
 			</article>
-			<article class="col-1_4">
+			<article>
 				<div class="box">
 					<span class="number">200</span>
 					<span class="mega">mega</span>
 					<span class="p-wifi">Wi-fi grátis</span>
-					<span class="price"><p>R$139,90</p></span>
-					<button class="button-sign">Assine já</button>
+					<span class="price">
+						<p>R$139,90</p>
+					</span>
+					<button class="button-sign" data-plano="200">Assine já</button>
 				</div>
 			</article>
 		</div>
 	</section>
 	<section class="main-content">
 		<div class="maxwidth">
-			<h2 class="titles">A START FIBRA</h2>
-			<p class="titlep">Navegue com ultravelocidade de até 200 mega</p>
-			<article class="main-content-article col-1_2"> 
-				<span class="icon-download3"></span>
-				<h3 class="main-content-title">Maior desempenho</h3>
-				<p>Baixe arquivos, assista a vídeos<br>em HD e jogue online</p>
-			</article>
-			<article class="main-content-article col-1_2">
-				<span class="icon-cloud-upload"></span>
-				<h3 class="main-content-title">Altas velocidades de upload</h3>
-				<p>Compartilhe fotos e vídeos<br>com mais rapidez.</p>
-			</article>
-			<article class="main-content-article col-1_2">
-				<span class="icon-important_devices"></span>
-				<h3 class="main-content-title">Mais estabilidade</h3>
-				<p>Acesse a internet de vários<br>dispositivos ao mesmo tempo.</p>
-			</article>
-			<article class="main-content-article col-1_2">
-				<span class="icon-support_agent"></span>
-				<h3 class="main-content-title">Suporte para novos serviços.</h3>
-				<p>Nosso objetivo é a satisfação<br>de todos.</p>
-			</article>
+			<h2 class="middle-title">A StartNet Fibra</h2>
+			<p class="titlep">
+				Navegue com ultravelocidade de até
+				<span style="color: #ff8314">200</span> mega
+			</p>
+			<div class="col-1_2">
+				<article class="main-content-article">
+					<div><span class="icon-download3"></span></div>
+					<div>
+						<h3 class="main-content-title">Maior desempenho</h3>
+						<p>Baixe arquivos, assista a vídeos<br />em HD e jogue online</p>
+					</div>
+				</article>
+				<article class="main-content-article">
+					<div><span class="icon-important_devices"></span></div>
+					<div>
+						<h3 class="main-content-title">Mais estabilidade</h3>
+						<p>Acesse a internet de vários<br />dispositivos ao mesmo tempo.</p>
+					</div>
+				</article>
+				<article class="main-content-article">
+					<div><span class="icon-cloud-upload"></span></div>
+					<div>
+						<h3 class="main-content-title">Altas velocidades de upload</h3>
+						<p>Compartilhe fotos e vídeos<br />com mais rapidez.</p>
+					</div>
+				</article>
+				<article class="main-content-article">
+					<div><span class="icon-support_agent"></span></div>
+					<div>
+						<h3 class="main-content-title">Suporte para novos serviços.</h3>
+						<p>Nosso objetivo é a satisfação<br />de todos.</p>
+					</div>
+				</article>
+			</div>
 		</div>
 	</section>
-	<section id="history-content">
+	<section id="company-content">
 		<div class="maxwidth">
-			<h2>Sobre nossa empresa!</h2>
-			<article>
-				<a href="#" class="#"><img src="#" alt="" /></a>
-				<h3>História!</h3>
-				<p>Nossa trajetória começou em 2021<br> quando enxergamos a necessidade de um<br>provedor que
-					fornecesse internet com<br>velocidade e estabilidade a um custo<br>acessível para todos</p>
-			</article>
-			<article>
-				<a href="#" class="#"><img src="#" alt="" /></a>
-				<h3>Missão</h3>
-				<p>Nossa missão é levar a comunicação através da internet com tecnologia de ponta. Expandi-la em
-					todas as áreas<br>inclusive de dificil acesso.</p>
-			</article>
-			<article>
-				<a href="#" class="#"><img src="#" alt="" /></a>
-				<h3>Valores</h3>
-				<p>Somos um time apaixonados por servir<br>nossos clientes com qualidade e transparência.</p>
-			</article>
+			<h2 class="company-title">Sobre nossa empresa!</h2>
+			<div>
+				<article class="content-article col-1_3">
+					<h3 class="titles">História!</h3>
+					<div class="container">
+						<i class="fas fa-book-open icon"></i>
+						<p class="content-p">
+							Nossa trajetória começou em 2021 quando enxergamos a necessidade de um
+							provedor que fornecesse internet com velocidade e estabilidade a um custo acessível
+							para todos
+						</p>
+					</div>
+				</article>
+			</div>
+			<div>
+				<article class="content-article col-1_3"">
+            <h3 class=" titles">Missão</h3>
+					<div class="container">
+						<i class="fas fa-bullseye icon"></i>
+						<p class="content-p">
+							Nossa missão é levar a comunicação através da internet com
+							tecnologia de ponta. Expandi-la em todas as áreas inclusive
+							de difícil acesso.
+						</p>
+					</div>
+				</article>
+			</div>
+			<div>
+				<article class="content-article col-1_3">
+					<h3 class=" titles">Valores</h3>
+					<div class="container">
+						<i class="far fa-heart icon"></i>
+						<p class="content-p">
+							Somos um time apaixonados por servir nossos clientes com
+							qualidade e transparência.
+						</p>
+					</div>
+				</article>
+			</div>
 		</div>
 	</section>
-	<footer id="footer">
-		<p>Telefone e Whatsapp: +55 11 1111-2222</p>
-		<p>Siga-nos em nossas<br>redes sociais:</p>
-		<ul class="icons">
-			<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-			<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-		</ul>
-		<p>Startnet-cnpj: 48.520.165/0003-90</p>
+	<footer class="main-footer">
+		<p class="footer-p">Telefone e Whatsapp: +55 11 1111-2222</p>
+		<p class="footer-p">Siga-nos em nossas redes sociais:</p>
+		<nav class="footer-nav">
+			<ul class="ul-icons">
+				<li>
+					<a href="https://www.instagram.com/" target="_blank" class="icon-instagram">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com" target="_blank" class="icon-facebook">
+						<i class="fab fa-facebook-square"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<p class="footer-p">Startnet-cnpj: 48.520.165/0003-90</p>
 	</footer>
+
+	<!-- MODAL -->
+	<dialog id="cepDialog">
+		<div class="content">
+			<span class="closeDialog">&times;</span>
+			<p class="title">STARTNET</p>
+			<p>Verifique a disponibilidade em seu endereço</p>
+			<form method="dialog">
+				<input type="number" id="cep" placeholder="Digite seu CEP*" required />
+				<span>
+					<a href="http://www.buscacep.correios.com.br/sistemas/buscacep/" target="_blank">
+						Esqueci meu CEP
+					</a>
+				</span>
+				<input type="number" id="numeroCasa" placeholder="Nº da sua residencia*" required />
+				<button type="submit" class="btnConsulta">Consultar</button>
+			</form>
+		</div>
+	</dialog>
+	<script src="./js/modal.js" type="module"></script>
+	<script src="https://kit.fontawesome.com/7c615c2452.js" crossorigin="anonymous"></script>
+
+	<!--MODAL CEP unavailable-->
+	<dialog id="cepUn">
+		<div class="modal-container">
+			<div class="modal-content">
+				<button class="close">x</button>
+				<h3 class="modal-title">Infelizmente, nossos serviços ainda não<br />estão disponíveis na sua região :(</h3>
+				<p class="modal-subtitle">Informe seus dados para que a gente possa te avisar quando nossa<br />cobertura estiver
+					disponível</p>
+				<form method="dialog">
+					<input type="text" id="name" placeholder="Digite seu nome" required autofocus>
+					<input type="email" id="email" placeholder="Digite seu e-mail" required>
+					<input type="tel" id="phone" placeholder="Digite seu número de contato">
+					<button type="submit" class="btnSubmit">Me avise</button>
+				</form>
+			</div>
+		</div>
+	</dialog>
+	<script>
+        $(document).ready(function () {
+            $('#phone').mask('(00) 00000-0000');
+        });
+    </script>
 </body>
 
 </html>

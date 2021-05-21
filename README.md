@@ -24,9 +24,9 @@ O projeto será gerenciado com a metodologia Scrum e desenvolvido com as tecnolo
 ## Endereço da Aplicação
 a definir
 
-## A fazer
+## Instruções de instalação
 
-- [ ] Definir requisitos da aplicação.
-- [ ] instalar as ferramentas necessárias para o desenvolvimento do projeto.
-- [ ] hospedar o projeto na aws.
-- [ ] Definir instruções de instalação e acesso.
+  - Use o comando **`git clone`** para fazer uma cópia deste repositório em sua maquina local.
+  - Instale o [Node JS](https://nodejs.org/pt-br/) e o gerenciador de pacotes [Yarn](https://classic.yarnpkg.com/en/docs/install/#windows-stable).
+  - Na pasta *STARTNET/backend/* utilize o comando **`yarn`** para instalar todas as dependências necessarias.
+  - Utilize **`yarn develop`** para iniciar o servidor em ambiente de desenvolvimento.

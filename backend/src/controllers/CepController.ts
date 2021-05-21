@@ -12,7 +12,9 @@ async function CepController(req: Request, res: Response): Promise<Response> {
 
   if (ddd != 11) {
     return res
-      .send('Infelizmente não cobrimos sua região no momento')
+      .json({
+        noService: `Infelizmente nossos serviços ainda não estão disponiveis para ${localidade} :(`,
+      })
       .status(200);
   }
 

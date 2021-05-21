@@ -1,0 +1,63 @@
+dialog {
+  border: none;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+dialog .closeDialog {
+  color: #080e45;
+  font-size: 30px;
+  position: absolute;
+  right: 35px;
+  top: 5px;
+  cursor: pointer;
+}
+
+dialog .title {
+  font-size: 30px;
+  margin: 14px;
+  font-weight: bold;
+  color: #080e45;
+}
+
+dialog p {
+  font-size: 20px;
+  font-weight: normal;
+  color: #080e45;
+}
+
+dialog form {
+  display: flex;
+  flex-direction: column;
+}
+
+dialog form input {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  margin: 30px;
+  outline: 0;
+}
+
+dialog form span {
+  font-size: 12px;
+  position: absolute;
+  top: 200px;
+  left: 59px;
+}
+
+dialog form span a {
+  text-decoration: none;
+}
+
+dialog form button {
+  width: 150px;
+  border-radius: 25px;
+  background-color: #080e45;
+  color: #fff;
+  padding: 10px;
+  align-self: center;
+  cursor: pointer;
+}

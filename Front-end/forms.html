@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
+<script defer src="./js/forms.js"></script>  
 <body>
-
-<img src="#" alt="#">    
-<h2>Starnet</h2>
-<h3>LOGIN</h3>
-<form action="Forms-Login">
-  <label for="fname">E-mail</label><br>
-  <input type="text" id="fname" name="fname" value="E-mail"><br>
-  <label for="lname">Senha</label><br>
-  <input type="text" id="lname" name="lname" value="Senha"><br><br>
-  <button type="button">Acessar</button>
-</form> 
-
+<div id="error"></div>  
+<div class="wrapper">
+  <img src="./assets/logo.png" alt="startnet logo">    
+  <h3>LOGIN</h3>
+  <form id="form" action="Forms-Login">
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" placeholder="E-mail"><br>
+    <label for="password">Senha</label>
+    <input type="password" id="password" name="lname" placeholder="Senha"><br><br>
+    <button type="submit">Acessar</button>
+  </form> 
+</div>
 </body>
 </html>
