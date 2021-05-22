@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagamento</title>
+  </head>
+  <body>
+    <h2>Escolha a forma de pagamento</h2>
 
-<h2>Escolha a forma de pagamento</h2>
+    <form>
+      <input type="radio" id="debito" name="pagamento" />
+      <label for="debito">Débito em conta</label>
+      <input type="radio" id="boleto" name="pagamento" />
+      <label for="boleto">Boleto Bancário</label>
 
-    <form action="Forms-#">
-        <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Débito em conta</label>
-                <input type="radio" id="female" name="gender" value="female">
-                     <label for="female">Boleto Bancário</label><br><br>
-    </form> 
+      <label for="vencimento">Dia do Vencimento</label>
+      <input
+        type="date"
+        id="vencimento"
+        name="vencimento"
+        placeholder="Selecione"
+      />
 
-        <form action="Forms-# ">
-            <label for="fname">Dia do Vencimento</label>
-                <input type="text" id="fname" name="fname" value="Seleciono">
-                    <label for="lname">Banco</label>
-                        <input type="text" id="lname" name="lname" value="Selecione"><br><br>  
-        </form>
-            <form action="Forms-#">
-                <label for="fname">Agência</label>
-                    <input type="text" id="fname" name="fname" value="">
-                        <label for="lname">Conta corrente</label>
-                            <input type="text" id="lname" name="lname" value="">
-                                <label for="lname">Dígite</label>
-                                    <input type="text" id="lname" name="lname" value=""><br><br>
-         
-</form>  
-<button type="button">Prosseguir para a próxima etapa</button>
+      <label for="banco">Banco</label>
+      <input type="text" id="banco" name="banco" />
 
-</body>
+      <label for="agencia">Agência</label>
+      <input type="text" id="agencia" name="agencia" />
+      <label for="conta">Conta corrente</label>
+      <input type="text" id="conta" name="conta" />
+      <label for="digito">Dígito</label>
+      <input type="number" id="digito" name="digito" />
+      <button type="submit">Finalizar assinatura</button>
+    </form>
+  </body>
 </html>
