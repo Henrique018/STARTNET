@@ -1,4 +1,4 @@
-import { getZipcode } from "./utils/getZipcode.js";
+import backendRequest from "./utils/backendRequest.js";
 
 const signButtonsCollection = document.getElementsByClassName('button-sign');
 const cepDialog = document.querySelector('#cepDialog');
@@ -30,10 +30,13 @@ numberInput.addEventListener('change', function onChange() {
 });
 
 cepDialog.addEventListener('close', async function onClose() {
-    if(cepDialog.returnValue == '') return;
+    const CEP = cepDialog.returnValue;
+
+    //Não foi preechido
+    if(CEP == '') return;
 
     // se não preencheu corretamente
-    if(cepDialog.returnValue.length >= 1 && cepDialog.returnValue.length < 8 ||cepDialog.returnValue.length > 8) {
+    if(CEP.length >= 1 && CEP.length < 8 || CEP.length > 8) {
         alert('Parece que há um erro com o CEP preenchido');
         cepDialog.showModal();
         cepInput.focus();
@@ -41,7 +44,10 @@ cepDialog.addEventListener('close', async function onClose() {
     }
     
     try {
-        const response = await getZipcode(cepDialog.returnValue);
+        const bodyRequest = {
+            cep: CEP
+        }
+        const response = await backendRequest('/cep', 'POST', bodyRequest);
 
         if(response?.noService) {
             alert(response.noService)
@@ -56,7 +62,7 @@ cepDialog.addEventListener('close', async function onClose() {
                 numero,
                 cep: cepDialog.returnValue,
             }));
-            window.location.href = `${location.protocol}//${location.host}${location.pathname}data.html`;
+            window.location.href = `${location.protocol}//${location.host}/data.html`;
         } 
     }
     catch(e) {
