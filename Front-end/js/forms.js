@@ -5,7 +5,7 @@ const form =  document.getElementById('form')
 
 form.addEventListener('submit',(e) => {
     let messages = {}
-    if (email.value ===''|| email.value == null ){
+    if (email.value .lenght == "@"){
         messages.push('Email Invalido')
         return false;
     }
@@ -14,4 +14,6 @@ form.addEventListener('submit',(e) => {
         messages.push('Senha Invalida')
         return false;
     }
+    return true;
+
 })
