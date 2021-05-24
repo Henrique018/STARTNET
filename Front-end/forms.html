@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html>
-<script defer src="./js/forms.js"></script>  
-<body>
-<div id="error"></div>  
-<div class="wrapper">
-  <img src="./assets/logo.png" alt="startnet logo">    
-  <h3>LOGIN</h3>
-  <form id="form" action="Forms-Login">
-    <label for="email">E-mail</label>
-    <input type="email" id="email" name="email" placeholder="E-mail"><br>
-    <label for="password">Senha</label>
-    <input type="password" id="password" name="lname" placeholder="Senha"><br><br>
-    <button type="submit">Acessar</button>
-  </form> 
-</div>
-</body>
+  <script defer src="./js/forms.js"></script>  
+  <title>Cadastre-se em StartNet</title>
+  <link rel="stylesheet" type="text/css"  href="css/forms.css">
+  <link rel="shortcut icon" href="./assets/logo.png" />	
+
+  <body>
+    <div id="error"></div>   
+    <div class="wrapper">   
+      <form action="Forms-Login">
+        <h3>Crie uma conta para colaborar no Projeto STARTNET </h3>      
+        <img src="./assets/logo-forms.jpg">
+          <div>
+            <input type="email" class="form" name="email" placeholder="E-mail">
+          </div>
+          <div>
+            <input type="password" class="form" name="name" placeholder="Senha">
+          </div>
+        <button type="submit" id="cadastro" onclick="Conta()">Criar Conta</button>
+        <div class="login">
+          <label> Já tem uma conta?
+            <a href="login.html"> Faça login </a>
+          </label>
+          <p>Este site é protegido pelos alunos da <a href="https://seletivo.uninove.br/graduacao-e-curta-duracao/todos/todos/">Uninove</a><br>
+            Ao clicar em "Criar Conta", concordo com os Termos de Serviço e Política de Privacidade da STARTNET.
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
