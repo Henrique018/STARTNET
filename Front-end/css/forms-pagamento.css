@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(227, 229, 231);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.wrapper {
+    background: rgb(255, 255, 255); 
+    width: 350px;
+    height: 500px;
+    border: rgb(24, 71, 226) solid;
+    position: relative;
+    margin: 60px 500px;
+    border-radius: 5px;
+}
+
+#title{
+    background-color: #ccc;
+    padding: 5px;
+    margin-bottom: 40px;
+
+}
+
+h3 {
+    font-size: 15px;
+    color: #000;
+    font-family: Arial,sans-serif;
+    margin-top: 5px;
+    margin-left: 25px;
+    padding: 2px;
+    text-align: left;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+
+.radio {
+    padding: 0px 50px 0px 0px;
+    font-size: 15px;
+}
+
+.titular {
+    width: 290px;
+    padding: 10px 8px;
+    margin: 5px 20px 25px 20px;
+    text-align: left;
+    color: #000;
+    border: solid 2px black;
+    border-radius: 5px;
+}
+
+.input {
+    width: 130px;
+    padding: 10px 8px;
+    margin: 5px 20px 0px 20px;
+    text-align: left;
+    color: #000;
+    border: solid 2px black;
+    border-radius: 5px;
+}
+
+.infor {
+    margin: 25px 20px 25px 20px;
+}
+
+.infor-cvv {
+    padding-left: 20px;
+}
+
+.cvv {
+    width: 115px;
+    padding: 11px 8px;
+    text-align: left;
+    color: #000;
+    border: solid 2px black;
+    border-radius: 5px;
+}
+
+#pagar {
+    margin: 50px 50px 0px 80px;
+    padding: 13px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}

@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(227, 229, 231);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.wrapper {
+    background: rgb(255, 255, 255); 
+    width: 400px;
+    height: 450px;
+    border: rgb(24, 71, 226) solid;
+    position: relative;
+    margin: 100px 500px;
+    border-radius: 5px;
+}
+
+h3 {
+    margin: 5px 20px 0px 20px;
+    font-size: 20px;
+    color: #000;
+    font-family: Arial,sans-serif;
+    text-align: center;
+    padding: 15px;
+}
+
+img {
+    height:80px;
+    width: 120px;
+    padding: 0px 140px 30px 140px;
+    
+}
+
+.infor {
+    margin: 0px 0 0px 20px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.login {
+    width: 350px;
+    padding: 10px 3px;
+    margin: 5px 20px 25px 20px;
+    text-align: left;
+    color: #000;
+    border: solid 2px black;
+    border-radius: 5px;
+}
+
+#mudar-senha a {
+    padding-left: 145px;
+    text-decoration: none;
+    color: rgb(9, 9, 199);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mudar-senha a:hover {
+    color: rgb(9, 9, 199);
+    text-decoration: underline;
+}
+
+#acessar {
+    margin: 20px 25px 0px 25px;
+    padding: 13px;
+    width: 353px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
