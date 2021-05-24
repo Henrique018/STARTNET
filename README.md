@@ -22,7 +22,7 @@ O sistema incluirá todos os planos disponíveis, com seus respectivos valores e
 O projeto será gerenciado com a metodologia Scrum e desenvolvido com as tecnologias web HTML, CSS e JavaScript, além do MySQL como banco de dados. O projeto será hospedado em nuvem na Amazon AWS.
 
 ## Endereço da Aplicação
-a definir
+  - Front end: [STARTNET](startnet.vercel.app)
 
 ## Instruções de instalação
 
