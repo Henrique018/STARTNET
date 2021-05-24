@@ -5,34 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagamento</title>
+    <link rel="stylesheet" type="text/css"  href="css/forms-pagamento.css">
+    <link rel="shortcut icon" href="./assets/logo.png" />
   </head>
   <body>
-    <h2>Escolha a forma de pagamento</h2>
+    <div id="error"></div>     
+    <div class="wrapper">
+      <div id="title">
+        <h3>PAGAMENTO<br><br>
+            Cartão de Crédito
+        </h3> 
+      </div>
+      <form>
+        <label class="infor" for="banco">Nome do Titular:</label><br>
+        <input type="text" class="titular" name="titular" placeholder="Nome como impresso no cartão"/><br>
 
-    <form>
-      <input type="radio" id="debito" name="pagamento" />
-      <label for="debito">Débito em conta</label>
-      <input type="radio" id="boleto" name="pagamento" />
-      <label for="boleto">Boleto Bancário</label>
+        <label class="infor" for="banco">Némero do Cartão:</label><br>
+        <input type="text" class="titular" name="titular" placeholder="0000 0000 0000 0000"/><br>
 
-      <label for="vencimento">Dia do Vencimento</label>
-      <input
-        type="date"
-        id="vencimento"
-        name="vencimento"
-        placeholder="Selecione"
-      />
-
-      <label for="banco">Banco</label>
-      <input type="text" id="banco" name="banco" />
-
-      <label for="agencia">Agência</label>
-      <input type="text" id="agencia" name="agencia" />
-      <label for="conta">Conta corrente</label>
-      <input type="text" id="conta" name="conta" />
-      <label for="digito">Dígito</label>
-      <input type="number" id="digito" name="digito" />
-      <button type="submit">Finalizar assinatura</button>
-    </form>
+        <label class="infor" for="vencimento">Dia do Vencimento</label>
+        <label class="infor-cvv" for="banco">CVV:</label><br><br>
+        <input class="input"
+          type="date"
+          id="vencimento"
+          name="vencimento"
+          placeholder="Selecione"
+        /><input type="text" class="cvv" name="cvv" placeholder="000"/><br>
+       
+        <button type="submit" id="pagar">Concluir</button>
+      </form>
+    </div>
   </body>
 </html>
