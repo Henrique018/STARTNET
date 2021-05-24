@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <script defer src="./js/forms.js"></script>  
-  <title>Entrar em StartNet</title>
-  <link rel="stylesheet" type="text/css"  href="css/login.css">
-  <link rel="shortcut icon" href="./assets/logo.png" />	
+<script defer src="./js/forms.js"></script>
+<title>Entrar em StartNet</title>
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400&family=Rubik:wght@400;700&display=swap"
+  rel="stylesheet" />
 
-  <body>
-    <div id="error"></div>     
-    <div class="wrapper">
-      <h3>Login</h3> 
-      <img src="./assets/logo-forms.jpg">
-      <form id="form" action="Forms-Login">
-        <div>
-          <label class="infor">Seu E-mail</label><br>
-          <input type="email" class="login" name="email" ></input>
-        </div>
-        <div>
-          <label class="infor">Sua Senha</label>
-          <label id="mudar-senha">
-            <a href="#">Esqueceu a senha?</a>
-          </label><br>
-          <input type="password" class="login" name="name"></input>
-        </div>
-        <button type="submit" id="acessar" onclick="Acessar()">Acessar</button>
-      </form>
-    </div>
-  </body>
+<body>
+  <div id="error"></div>
+  <div class="wrapper">
+    <a href="./index.html"><img src="./assets/logo.png"></a>
+    <h1>Login</h1>
+    <form id="form" action="Forms-Login">
+      <div>
+        <label class="infor">E-mail</label><br>
+        <input type="email" class="login" name="email" placeholder="e-mail"></input>
+      </div>
+      <div>
+        <label class="infor">Senha</label><br>
+        <input type="password" class="login" name="name" placeholder="senha"></input>
+      </div>
+      <label id="mudar-senha">
+        <a href="#">Esqueceu a senha?</a>
+      </label>
+      <button type="submit" id="acessar" onclick="Acessar()">Acessar</button>
+    </form>
+  </div>
+</body>
 
 </html>

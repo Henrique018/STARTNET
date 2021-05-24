@@ -3,56 +3,55 @@
     border: 0;
     padding: 0;
     box-sizing: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Rubik", sans-serif;
+    text-align: center;
 }
 
 body {
-    background-color: rgb(227, 229, 231);
-    background-repeat: no-repeat;
-    position: relative;
+    background: rgb(217, 217, 217);
 }
 
 .wrapper {
     background: rgb(255, 255, 255); 
-    width: 400px;
-    height: 450px;
-    border: rgb(24, 71, 226) solid;
-    position: relative;
-    margin: 100px 500px;
-    border-radius: 5px;
+    margin: 0 auto;
+    width: 500px;
+    height: 600px;
+    margin-top: 100px;
+    border-radius: 8px;
 }
 
-h3 {
-    margin: 5px 20px 0px 20px;
+h1 {
+    margin-top: 40px;
     font-size: 20px;
-    color: #000;
-    font-family: Arial,sans-serif;
-    text-align: center;
-    padding: 15px;
+    color: #080e45;
+    text-transform: uppercase;
 }
+
 
 img {
-    height:80px;
+    height:100px;
     width: 120px;
-    padding: 0px 140px 30px 140px;
-    
+    margin-top: 35px;
 }
 
 .infor {
-    margin: 0px 0 0px 20px;
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #080e45;
     
+}
+#form {
+    margin-top: 5px;
+    padding: 30px 70px; 
 }
 
 .login {
-    width: 350px;
-    padding: 10px 3px;
-    margin: 5px 20px 25px 20px;
-    text-align: left;
-    color: #000;
-    border: solid 2px black;
-    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 15px;
+    width: 320px;
+    border: solid 1.5px #333;
+    border-radius: 8px;
+    text-align: start;
 }
 
 #mudar-senha a {
@@ -60,7 +59,6 @@ img {
     text-decoration: none;
     color: rgb(9, 9, 199);
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 #mudar-senha a:hover {
@@ -69,11 +67,11 @@ img {
 }
 
 #acessar {
-    margin: 20px 25px 0px 25px;
+    margin-top: 25px;
     padding: 13px;
     width: 353px;
     border-radius: 5px;
-    background-color: black;
+    background-color: #080e45;
     color: white;
     display: inline-block;
     cursor: pointer;
