@@ -10,8 +10,8 @@ CREATE TABLE `CLIENTE` (
   `nome` varchar(200) NOT NULL,
   `email` varchar(200) NOT NULL,
   `senha` varchar(200) NOT NULL,
-  `rg` char(14) UNIQUE NOT NULL UNIQUE,
-  `cpf` char(11) UNIQUE NOT NULL UNIQUE,
+  `rg` char(14) UNIQUE NOT NULL,
+  `cpf` char(11) UNIQUE NOT NULL,
   `telefone` varchar(11) NOT NULL,
   `data_nasc` date(8) NOT NULL,
   `codigo_plano` int
