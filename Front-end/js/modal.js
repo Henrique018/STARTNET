@@ -2,10 +2,13 @@ import backendRequest from "./utils/backendRequest.js";
 
 const signButtonsCollection = document.getElementsByClassName('button-sign');
 const cepDialog = document.querySelector('#cepDialog');
-const closeButton = document.getElementsByClassName('closeDialog')[0];
+const closeButton = document.getElementsByClassName('close')[0];
 const cepInput = document.querySelector('#cep');
 const numberInput = document.querySelector('#numeroCasa');
 const ConsultButton = document.querySelector('.btnConsulta');
+
+const unavailableModal = document.querySelector('#cepUn');
+const unavailableText = document.querySelector('.modal-title');
 
 //transfoma um HTMLCollection em um array
 const signButtons = Array.prototype.slice.call(signButtonsCollection);
@@ -50,7 +53,9 @@ cepDialog.addEventListener('close', async function onClose() {
         const response = await backendRequest('/cep', 'POST', bodyRequest);
 
         if(response?.noService) {
-            alert(response.noService)
+            unavailableText.textContent = `${response.noService}`;
+            unavailableModal.showModal();
+
         } else {
             const {uf, localidade,bairro, logradouro} = response;
 

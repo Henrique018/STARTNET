@@ -2,35 +2,25 @@ body {
     font-family: "Rubik", sans-serif;
 }
 .modal-container {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: fixed;
     top: 0;
     left: 0;
-    z-index: 2000;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .modal-content {
     background: white;
-    width: 50%;
-    height: 50%;
-    min-width: 300px;
+    max-width: 500px;
     position: relative;
 }
 .close {
     position: absolute;
     top: 0;
-    right: 0;
-    width: 50px;
-    height: 40px;
-    border-radius: 20%;
+    right: 5px;
     border: none;
-    font-size: 25px;
     color: #080e45;
-    background: white;
+    background: transparent;
+    font-size: 30px;
     cursor: pointer;
 }
 .modal-title {
@@ -42,25 +32,4 @@ body {
     font-size: 18px;
     color: #090808;
     font-weight: normal;
-}
-div input {
-    display: block;
-    margin-left: 167px;
-    border: none;
-    border-bottom: 2px solid #828282;
-    width: 500px;
-    margin-top: 40px;
-}
-input:focus {
-    box-shadow: 0 0 0 0;
-    outline: 0;
-}
-.btnSubmit {
-    width: 150px;
-    border-radius: 25px;
-    background-color: #080e45;
-    margin-top: 30px;
-    color: #fff;
-    padding: 10px;
-    cursor: pointer;
 }

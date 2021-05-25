@@ -6,14 +6,6 @@ dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-dialog .closeDialog {
-  color: #080e45;
-  font-size: 30px;
-  position: absolute;
-  right: 35px;
-  top: 5px;
-  cursor: pointer;
-}
 
 dialog .title {
   font-size: 30px;
