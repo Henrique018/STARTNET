@@ -9,17 +9,18 @@ CREATE TABLE `CLIENTE` (
   `cliente_ID` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `nome` varchar(200) NOT NULL,
   `email` varchar(200) NOT NULL,
-  `rg` varchar(14) UNIQUE NOT NULL,
-  `cpf` varchar(11) UNIQUE NOT NULL,
+  `senha` varchar(200) NOT NULL,
+  `rg` char(14) UNIQUE NOT NULL UNIQUE,
+  `cpf` char(11) UNIQUE NOT NULL UNIQUE,
   `telefone` varchar(11) NOT NULL,
-  `data_nasc` varchar(8) NOT NULL,
+  `data_nasc` date(8) NOT NULL,
   `codigo_plano` int
 );
 CREATE TABLE `ENDERECO` (
   `cliente_ID` int NOT NULL,
-  `cep` varchar(9) NOT NULL,
+  `cep` char(9) NOT NULL,
   `logradouro` varchar(200) NOT NULL,
-  `numero` varchar(8),
+  `numero` varchar(8) NOT NULL,
   `bairro` varchar(150) NOT NULL,
   `cidade` varchar(20) NOT NULL,
   `estado` char(2) NOT NULL
