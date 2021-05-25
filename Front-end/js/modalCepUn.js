@@ -1,9 +1,12 @@
-const cepUn = document.querySelector("cepUn");
+const cepUn = document.querySelector("#cepUn");
 const nameInput = document.querySelector('#Name');
 const emailInput = document.querySelector('#Email');
 const phoneInput = document.querySelector('#phone');
 const SubmitButton = document.querySelector(".btnSubmit")
 
+
+const closeButton = document.getElementsByClassName('closeUn')[0];
+closeButton.addEventListener('click', () => cepUn.close());
 
 nameInput.addEventListener('change', function onChange() {
     SubmitButton.value = nameInput.value;
