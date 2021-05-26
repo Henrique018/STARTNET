@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html>
-<body>
+<script defer src="./js/forms.js"></script>  
+  <title>Agendamento</title>
+  <link rel="stylesheet" type="text/css"  href="css/agendamento.css">
+  <link rel="shortcut icon" href="./assets/logo.png" />	
+    <body> 
 
-<h2>Agende a sua instalação</h2>
-
-<form>
-  <input type="radio" id="male" name="gender" value="male">
-  <label for="male">Manhã</label><br>
-  <input type="radio" id="female" name="gender" value="female">
-  <label for="female">Tarde</label><br><br>
-
-    <form>
-        <div class="row date-range">
-            <div class="col-lg-3">
-                <label for="example1" class="sr-only">Data</label>
-                <div class="input-group datepicker">
-                    <input type="text" data-max-date="today" class="form-control date-mask to-date" placeholder="dd/mm/aaaa">
-                </div>
-            </div>
-        </div>
-    </form>
-
-</form> 
-
-</body>
-</html>
+      <div id="error"></div>   
+      <div class="wrapper">  
+        <img src="./assets/logo-forms.jpg">
+        <h2>AGENDE A SUA INSTALAÇÃO</h2> 
+      <div>      
+        <label id="infodata">Data:</label>
+        <input type="date" data-max-date="today" id="date" placeholder="dd/mm/aaaa">
+      </div>
+      <div>
+        <input type="radio" class="male" name="gender" value="male">
+        <label for="male" class="turno">Manhã</label>
+        <input type="radio" class="male" name="gender" value="female">
+        <label for="female" class="turno">Tarde</label><br><br>
+    </div>
+    <button type="button" id="button">Agendar</button>
+    </body>
+    </html>
