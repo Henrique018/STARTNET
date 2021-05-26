@@ -13,7 +13,7 @@ CREATE TABLE `CLIENTE` (
   `rg` char(14) UNIQUE NOT NULL,
   `cpf` char(11) UNIQUE NOT NULL,
   `telefone` varchar(11) NOT NULL,
-  `data_nasc` date(8) NOT NULL,
+  `data_nasc` date NOT NULL,
   `codigo_plano` int
 );
 CREATE TABLE `ENDERECO` (

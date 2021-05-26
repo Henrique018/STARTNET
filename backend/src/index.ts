@@ -15,7 +15,7 @@ app.use(express.json());
 app.use('/cep', cepRoutes);
 app.use('/cliente', clienteRoutes);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 app.listen(PORT, () =>
   console.log(`App started on port ${PORT} in ${process.env.NODE_ENV} mode`)
 );
