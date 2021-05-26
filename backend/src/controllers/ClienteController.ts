@@ -31,15 +31,18 @@ export default {
 
       await conn.beginTransaction();
 
-      const cliente = await ClienteData.storeClient(user);
+      const [results] = await ClienteData.storeClient(user);
 
-      const lastInsertedId = cliente[0].insertId;
+      const resultSet: any = results;
+      console.log(resultSet.insertId);
 
-      await ClienteData.storeClientAdress(lastInsertedId, endereco);
+      await ClienteData.storeClientAdress(resultSet.insertId, endereco);
 
       await conn.commit();
 
-      return res.status(201).json(`User created with id: ${lastInsertedId}`);
+      return res
+        .status(201)
+        .json(`User created with id: ${resultSet.insertId}`);
     } catch (error) {
       await conn.rollback();
       return res.status(500).json(`create client failed, ${error}`);
