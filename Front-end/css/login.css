@@ -1,82 +1,77 @@
 * {
     margin: 0;
-    border: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     font-family: "Rubik", sans-serif;
+}
+body {
+    padding-top: 15vh;
+    background: rgb(217, 217, 217);
     text-align: center;
 }
-
-body {
-    background: rgb(217, 217, 217);
+.logo {
+    height:100px;
+    width: 120px;
+    margin-top: 20px;
 }
-
-.wrapper {
-    background: rgb(255, 255, 255); 
-    margin: 0 auto;
-    width: 500px;
-    height: 600px;
-    margin-top: 100px;
-    border-radius: 8px;
-}
-
 h1 {
     margin-top: 40px;
+    margin-bottom: 40px;
     font-size: 20px;
     color: #080e45;
     text-transform: uppercase;
 }
-
-
-img {
-    height:100px;
-    width: 120px;
-    margin-top: 35px;
+#main-container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(255, 255, 255); 
+    border-radius: 10px;
+    padding: 30px;
 }
-
-.infor {
+.infor-label {
     font-size: 15px;
+    color: rgb(58, 58, 58);
     font-weight: bold;
-    color: #080e45;
-    
+    text-align: start;
+    margin: 5px;
 }
-#form {
-    margin-top: 5px;
-    padding: 30px 70px; 
-}
-
 .login {
-    margin-bottom: 30px;
     padding: 15px;
-    width: 320px;
+    margin-bottom: 35px;
     border: solid 1.5px #333;
     border-radius: 8px;
     text-align: start;
 }
 
-#mudar-senha a {
-    padding-left: 145px;
+input, label {
+    display: block;
+    width: 100%;
+}
+input:focus, label:focus {
+    outline: none;
+}
+#link-password {
+    text-align: end;
+}
+#link-password a {
     text-decoration: none;
     color: rgb(9, 9, 199);
     font-size: 15px;
 }
-
-#mudar-senha a:hover {
+#link-password a:hover {
     color: rgb(9, 9, 199);
     text-decoration: underline;
 }
-
-#acessar {
-    margin-top: 25px;
+#access {
+    margin-top: 30px;
+    margin-bottom: 20px;
     padding: 13px;
     width: 353px;
-    border-radius: 5px;
+    border-radius: 50px;
     background-color: #080e45;
     color: white;
-    display: inline-block;
     cursor: pointer;
-    font-family: Verdana;
-    font-weight: bold;
-    font-size: 16px;
-    text-decoration: none;
+    font-size: 18px;
+    border: none;
 }
