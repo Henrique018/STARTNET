@@ -1,0 +1,34 @@
+.main-footer {
+    text-align: center;
+    background: #080e45;
+    bottom: 0;
+    left: 0;
+    padding: 1px;
+  }
+  .ul-icons {
+    display: inline-block;
+    font-size: 30px;
+  }
+  .main-footer ul {
+    margin: 0;
+    padding: 0;
+  }
+  .footer-nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 5px 0 0 0;
+    padding: 2px;
+  }
+  
+  .footer-p {
+    color: #fff;
+    font-size: 17px;
+    margin: 17px 0;
+  }
+  .icon-facebook {
+    color: rgb(54, 135, 241);
+  }
+  .icon-instagram {
+    color: rgb(176, 0, 211);
+  }
+  

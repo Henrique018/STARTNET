@@ -5,35 +5,167 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagamento</title>
-    <link rel="stylesheet" type="text/css"  href="css/forms-pagamento.css">
+    <script src="https://kit.fontawesome.com/7c615c2452.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400&family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/forms-pagamento.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <link rel="shortcut icon" href="./assets/logo.png" />
   </head>
   <body>
-    <div id="error"></div>     
-    <div class="wrapper">
-      <div id="title">
-        <h3>PAGAMENTO<br><br>
-            Cartão de Crédito
-        </h3> 
+    <header class="top-header" id="home">
+      <div>
+        <a href="index.html">
+          <img class="logo" src="./assets/logo-menu.png" alt="startnet"
+        /></a>
       </div>
-      <form>
-        <label class="infor" for="banco">Nome do Titular:</label><br>
-        <input type="text" class="titular" name="titular" placeholder="Nome como impresso no cartão"/><br>
+      <nav class="top-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#plans">Planos</a></li>
+          <li><a href="#company-content">A Empresa</a></li>
+          <li><a href="login.html">Central do Assinante</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form>
+      <div class="wrapper">
+        <section class="info">
+          <div class="card info-card">
+            <div id="title">
+              <h3>Informações</h3>
+            </div>
 
-        <label class="infor" for="banco">Némero do Cartão:</label><br>
-        <input type="text" class="titular" name="titular" placeholder="0000 0000 0000 0000"/><br>
+            <div class="content">
+              <div class="info-title">
+                <h3>Plano de internet</h3>
+                <p>Confirme o plano de internet que deseja assinar</p>
+              </div>
+                <select class="planos" name="planos" id="planos" required>
+                  <option value="" disabled selected>Selecione</option>
+                  <option value="20">20 megas</option>
+                  <option value="60">60 megas</option>
+                  <option value="100">100 megas</option>
+                  <option value="150">150 megas</option>
+                  <option value="200">200 megas</option>
+                </select>
+              
+            </div>
 
-        <label class="infor" for="vencimento">Dia do Vencimento</label>
-        <label class="infor-cvv" for="banco">CVV:</label><br><br>
-        <input class="input"
-          type="date"
-          id="vencimento"
-          name="vencimento"
-          placeholder="Selecione"
-        /><input type="text" class="cvv" name="cvv" placeholder="000"/><br>
-       
-        <button type="submit" id="pagar">Concluir</button>
-      </form>
-    </div>
+            <div class="content">
+              <div class="info-title">
+                <h3>Agendamento</h3>
+                <p>Escolha o melhor dia para a instalação em sua residencia</p>
+              </div>
+
+              <label for="date">Data:</label>
+              <input
+                type="date"
+                min="2021-05-30"
+                id="date"
+                placeholder="dd/mm/aaaa"
+                required
+              />
+
+              <div class="info-title">
+                <h3>Periodo</h3>
+                <p>Periodo do dia de sua preferência</p>
+              </div>
+
+              <div class="turno">
+                <input type="radio" id="manha" name="turno" checked />
+                <label for="manha">Manhã</label>
+                <input type="radio" id="tarde" name="turno" />
+                <label for="tarde">Tarde</label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <aside>
+          <div class="card">
+            <div id="title">
+              <h3>Cartão de crédito</h3>
+            </div>
+            <div class="content">
+              <label class="infor" for="banco">Nome do Titular:</label>
+              <input
+                type="text"
+                class="titular"
+                name="titular"
+                placeholder="Nome como impresso no cartão"
+                required
+              />
+
+              <label class="infor" for="banco">Número do Cartão:</label>
+              <input
+                type="text"
+                class="titular"
+                name="titular"
+                placeholder="0000 0000 0000 0000"
+                required
+              />
+              <div class="card-details">
+                <div>
+                  <label class="infor" for="vencimento">
+                    Dia do Vencimento
+                  </label>
+                  <input
+                    class="input"
+                    type="date"
+                    id="vencimento"
+                    name="vencimento"
+                    placeholder="Selecione"
+                    required
+                  />
+                </div>
+                <div>
+                  <label class="infor-cvv" for="cvv">CVV:</label>
+                  <input
+                    type="text"
+                    class="cvv"
+                    name="cvv"
+                    id="cvv"
+                    placeholder="000"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="submit" id="pagar">Realizar assinatura</button>
+        </aside>
+      </div>
+    </form>
+    <footer class="main-footer">
+      <p class="footer-p">Telefone e Whatsapp: +55 11 1111-2222</p>
+      <p class="footer-p">Siga-nos em nossas redes sociais:</p>
+      <nav class="footer-nav">
+        <ul class="ul-icons">
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="icon-instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="icon-facebook"
+            >
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p class="footer-p">Startnet-cnpj: 48.520.165/0003-90</p>
+    </footer>
   </body>
 </html>
