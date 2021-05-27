@@ -38,7 +38,7 @@ if(userAdress) {
 
 //recuperar valores digitados nos campos
 const userInfo = {};
-const inputs = [nome, email,cpf,rg,telefone,dataNascimento];
+const inputs = [nome, email,cpf,rg,telefone,dataNascimento, senha];
 
 inputs.forEach(input => {
     input.addEventListener('change', () => {
