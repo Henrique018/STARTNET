@@ -20,6 +20,7 @@ export default {
       const {
         nome,
         email,
+        senha,
         cpf,
         rg,
         telefone,
@@ -27,7 +28,7 @@ export default {
         endereco,
       } = req.body;
 
-      const user = { nome, email, cpf, rg, telefone, dataNascimento };
+      const user = { nome, email, cpf, rg, telefone, dataNascimento, senha };
 
       await conn.beginTransaction();
 

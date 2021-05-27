@@ -1,10 +1,12 @@
 import { RowDataPacket } from 'mysql2/promise';
 
 import { db } from '../config/db';
+import encrypt from '../utils/encrypt';
 
 type ClientProps = {
   nome: string;
   email: string;
+  senha: string;
   cpf: string;
   rg: string;
   telefone: string;
@@ -32,11 +34,14 @@ export default {
   async storeClient(cliente: ClientProps) {
     const database = await db();
 
+    const hashPassword = await encrypt.hash(cliente.senha);
+
     return await database.query(
-      'insert into CLIENTE (nome, email,rg,cpf,telefone,data_nasc) VALUES (?,?,?,?,?,?);',
+      'insert into CLIENTE (nome,email,senha,rg,cpf,telefone,data_nasc) VALUES (?,?,?,?,?,?,?);',
       [
         cliente.nome,
         cliente.email,
+        hashPassword,
         cliente.rg,
         cliente.cpf,
         cliente.telefone,
