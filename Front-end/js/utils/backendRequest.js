@@ -6,7 +6,7 @@ async function backendRequest(route, method='GET', data) {
             'Content-Type': 'application/json'
         }
     }
-    const response = await fetch(`https://startnet-live.herokuapp.com/${route}`, options)
+    const response = await fetch(`https://startnet-live.herokuapp.com${route}`, options)
     .then(res => res.json());
     return response;
 }
