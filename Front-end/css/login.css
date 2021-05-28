@@ -5,24 +5,23 @@
     font-family: "Rubik", sans-serif;
 }
 body {
-    padding-top: 15vh;
+    padding-top: 10vh;
     background: rgb(217, 217, 217);
     text-align: center;
 }
 .logo {
     height:100px;
     width: 120px;
-    margin-top: 20px;
 }
 h1 {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     font-size: 20px;
-    color: #080e45;
+    color: rgb(43, 41, 41);
     text-transform: uppercase;
 }
 #main-container{
-    width: 500px;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
     background: rgb(255, 255, 255); 
@@ -30,18 +29,21 @@ h1 {
     padding: 30px;
 }
 .infor-label {
-    font-size: 15px;
-    color: rgb(58, 58, 58);
+    font-size: .8rem;
     font-weight: bold;
+    color: rgb(58, 58, 58);
     text-align: start;
-    margin: 5px;
 }
 .login {
-    padding: 15px;
-    margin-bottom: 35px;
-    border: solid 1.5px #333;
-    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-bottom: solid 2px #323232;
     text-align: start;
+    margin-bottom: 30px;
+}
+.login:focus {
+    border-bottom: solid 2px #080e45;
 }
 
 input, label {
@@ -54,24 +56,33 @@ input:focus, label:focus {
 #link-password {
     text-align: end;
 }
-#link-password a {
+#link-password a, #register-container a {
     text-decoration: none;
     color: rgb(9, 9, 199);
     font-size: 15px;
 }
-#link-password a:hover {
+#link-password a:hover, #register-container a:hover {
     color: rgb(9, 9, 199);
     text-decoration: underline;
 }
 #access {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    padding: 13px;
-    width: 353px;
-    border-radius: 50px;
-    background-color: #080e45;
-    color: white;
-    cursor: pointer;
-    font-size: 18px;
-    border: none;
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: bold;
+   border: none;
+   height: 40px;
+   width: 100%;
+   border-radius: 20px;
+   margin-top: 25px;
+   color: #fff;
+   background-color: #08558B;
+   cursor: pointer;
 }
+#access:hover {
+    background-color: #080e45;
+    transition: .5s;
+}
+#register-container {
+    margin-top: 20px;
+}
+

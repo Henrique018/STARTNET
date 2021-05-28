@@ -10,20 +10,24 @@
 <body>
   <div id="main-container">
     <a href="./index.html"><img class="logo" src="./assets/logo.png"></a>
-    <h1>Central do assinante</h1>
+    <h1>Login</h1>
     <form id="login-form" action="forms-login" method="POST">
       <div>
         <label for="email" class="infor-label">E-mail</label>
-        <input type="email" class="login" name="email" placeholder="e-mail"></input>
+        <input type="email" class="login" name="email" placeholder="Digite seu e-mail" autofocus></input>
       </div>
       <div>
         <label for="name" class="infor-label">Senha</label>
-        <input type="password" class="login" name="name" placeholder="senha"></input>
+        <input type="password" class="login" name="name" placeholder="Digite a sua senha"></input>
         <label id="link-password">
           <a href="#">Esqueceu a senha?</a>
         </label>
       </div>
       <button type="submit" id="access" onclick="Acessar()">Acessar</button>
+      <div id="register-container">
+          <label>Ainda não tem uma conta?</label>
+          <a href="#">Registrar</a>
+      </div>
     </form>
   </div>
 </body>
