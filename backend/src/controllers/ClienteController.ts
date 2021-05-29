@@ -32,18 +32,22 @@ export default {
 
       await conn.beginTransaction();
 
-      const [results] = await ClienteData.storeClient(user);
-
+      const results = await ClienteData.storeClient(user);
       const resultSet: any = results;
-      console.log(resultSet.insertId);
 
-      await ClienteData.storeClientAdress(resultSet.insertId, endereco);
+      if (resultSet?.existingUser) {
+        return res
+          .status(400)
+          .json(`User already exists with id ${resultSet.existingUser}`);
+      }
+
+      await ClienteData.storeClientAdress(resultSet[0].insertId, endereco);
 
       await conn.commit();
 
       return res
         .status(201)
-        .json(`User created with id: ${resultSet.insertId}`);
+        .json(`User created with id: ${resultSet[0].insertId}`);
     } catch (error) {
       await conn.rollback();
       return res.status(500).json(`create client failed, ${error}`);

@@ -34,26 +34,40 @@ export default {
   async storeClient(cliente: ClientProps) {
     const database = await db();
 
-    const hashPassword = await encrypt.hash(cliente.senha);
-
-    return await database.query(
-      'insert into CLIENTE (nome,email,senha,rg,cpf,telefone,data_nasc) VALUES (?,?,?,?,?,?,?);',
-      [
-        cliente.nome,
-        cliente.email,
-        hashPassword,
-        cliente.rg,
-        cliente.cpf,
-        cliente.telefone,
-        cliente.dataNascimento,
-      ]
+    const [
+      rows,
+    ] = await database.query(
+      'SELECT `cliente_ID` from `CLIENTE` WHERE `cpf` = ?;',
+      [cliente.cpf]
     );
+
+    const resultSet: any = rows;
+    const existingUser = resultSet[0]?.cliente_ID;
+
+    if (!existingUser) {
+      const hashPassword = await encrypt.hash(cliente.senha);
+
+      return await database.execute(
+        'insert into CLIENTE (nome,email,senha,rg,cpf,telefone,data_nasc) VALUES (?,?,?,?,?,?,?);',
+        [
+          cliente.nome,
+          cliente.email,
+          hashPassword,
+          cliente.rg,
+          cliente.cpf,
+          cliente.telefone,
+          cliente.dataNascimento,
+        ]
+      );
+    }
+
+    return { existingUser };
   },
 
   async storeClientAdress(userId: number, clientAdress: ClientAdress) {
     const database = await db();
 
-    return await database.query(
+    return await database.execute(
       'insert into ENDERECO (cliente_ID,cep, logradouro,numero,bairro,cidade,estado) VALUES (?,?,?,?,?,?,?);',
       [
         userId,
