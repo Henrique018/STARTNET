@@ -64,8 +64,12 @@ async function submitForm(userInfo, userAdress) {
     };
     console.log(bodyRequest);
     try {
-      await backendRequest('/cliente', 'POST', bodyRequest);
-      
+     const response = await backendRequest('/cliente', 'POST', bodyRequest);
+    
+    if (response.existingUser) {
+        alert('Parece que este usuario já cadastrado, faça login para acessar o seu plano');
+        return;
+    }
       window.location.href = `${location.protocol}//${location.host}/formspagamento.html`;
     } catch(err) {
         console.log('Algo deu errado ao tentar cadastrar usuario', err);

@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagamento</title>
-    <script src="https://kit.fontawesome.com/7c615c2452.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/7c615c2452.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400&family=Rubik:wght@400;700&display=swap"
       rel="stylesheet"
@@ -42,15 +45,14 @@
                 <h3>Plano de internet</h3>
                 <p>Confirme o plano de internet que deseja assinar</p>
               </div>
-                <select class="planos" name="planos" id="planos" required>
-                  <option value="" disabled selected>Selecione</option>
-                  <option value="20">20 megas</option>
-                  <option value="60">60 megas</option>
-                  <option value="100">100 megas</option>
-                  <option value="150">150 megas</option>
-                  <option value="200">200 megas</option>
-                </select>
-              
+              <select class="planos" name="planos" id="planos" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="20">20 megas</option>
+                <option value="60">60 megas</option>
+                <option value="100">100 megas</option>
+                <option value="150">150 megas</option>
+                <option value="200">200 megas</option>
+              </select>
             </div>
 
             <div class="content">
@@ -60,13 +62,7 @@
               </div>
 
               <label for="date">Data:</label>
-              <input
-                type="date"
-                min="2021-05-30"
-                id="date"
-                placeholder="dd/mm/aaaa"
-                required
-              />
+              <input type="date" id="date" required />
 
               <div class="info-title">
                 <h3>Periodo</h3>
@@ -100,7 +96,7 @@
 
               <label class="infor" for="banco">Número do Cartão:</label>
               <input
-                type="text"
+                type="number"
                 class="titular"
                 name="titular"
                 placeholder="0000 0000 0000 0000"
@@ -123,11 +119,12 @@
                 <div>
                   <label class="infor-cvv" for="cvv">CVV:</label>
                   <input
-                    type="text"
+                    type="number"
                     class="cvv"
                     name="cvv"
                     id="cvv"
                     placeholder="000"
+                    max="3"
                     required
                   />
                 </div>
@@ -165,5 +162,6 @@
       </nav>
       <p class="footer-p">Startnet-cnpj: 48.520.165/0003-90</p>
     </footer>
+    <script src="js/pagamento.js"></script>
   </body>
 </html>

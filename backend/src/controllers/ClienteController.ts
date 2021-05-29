@@ -36,9 +36,7 @@ export default {
       const resultSet: any = results;
 
       if (resultSet?.existingUser) {
-        return res
-          .status(400)
-          .json(`User already exists with id ${resultSet.existingUser}`);
+        return res.status(409).json({ existingUser: true });
       }
 
       await ClienteData.storeClientAdress(resultSet[0].insertId, endereco);
